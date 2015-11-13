@@ -393,6 +393,18 @@ td.notificationFunction {
 	margin-left: 8px;
 }
 
+#sizer a.pkp_controllers_fontController_smallFont:hover {
+	background: url(../lib/pkp/templates/images/icons/font-down.png);
+}
+
+#sizer a.pkp_controllers_fontController_defaultFont:hover {
+        background: url(../lib/pkp/templates/images/icons/font-default.png);
+}
+
+#sizer a.pkp_controllers_fontController_largeFont:hover {
+        background: url(../lib/pkp/templates/images/icons/font-up.png);
+}
+
 #journalListPageInfo {
 	float: right;
 }
