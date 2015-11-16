@@ -4,7 +4,8 @@
 <!--
   * 2.4.0_preupdate.xml
   *
-  * Copyright (c) 2003-2013 John Willinsky
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * 2.4.0 database updates XML file, run prior to schema sync.
@@ -15,6 +16,7 @@
 	<!-- Bug #6128: Change paper_files 'type' column to 'file_stage' -->
 	<sql>
 		<!-- First, change all strings to their integer equivalents -->
+		<query>DELETE FROM article_files WHERE type = 'temp'</query><!-- Bug #8264 -->
 		<query>UPDATE article_files SET type = 1 WHERE type = 'submission/original'</query><!-- ARTICLE_FILE_SUBMISSION -->
 		<query>UPDATE article_files SET type = 2 WHERE type = 'submission/review'</query><!-- ARTICLE_FILE_REVIEW -->
 		<query>UPDATE article_files SET type = 3 WHERE type = 'submission/editor'</query><!-- ARTICLE_FILE_EDITOR -->

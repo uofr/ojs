@@ -1,7 +1,8 @@
 {**
  * templates/index/site.tpl
  *
- * Copyright (c) 2003-2013 John Willinsky
+ * Copyright (c) 2013-2015 Simon Fraser University Library
+ * Copyright (c) 2003-2015 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Site index.
@@ -16,7 +17,7 @@
 
 <br />
 
-{if $intro}{$intro|nl2br}{/if}
+{if $intro}<div id="intro">{$intro|nl2br}</div>{/if}
 
 <a name="journals"></a>
 
@@ -39,7 +40,9 @@
 	{/if}
 	{if $site->getSetting('showDescription')}
 		{if $journal->getLocalizedDescription()}
-			<p>{$journal->getLocalizedDescription()|nl2br}</p>
+			<div class="journalDescription" id="journalDescription-{$journal->getId()|escape}">
+				{$journal->getLocalizedDescription()|nl2br}
+			</div>
 		{/if}
 	{/if}
 	<p><a href="{url journal=$journal->getPath()}" class="action">{translate key="site.journalView"}</a> | <a href="{url journal=$journal->getPath() page="issue" op="current"}" class="action">{translate key="site.journalCurrent"}</a> | <a href="{url journal=$journal->getPath() page="user" op="register"}" class="action">{translate key="site.journalRegister"}</a></p>
@@ -49,7 +52,7 @@
 {/if}
 
 <div id="journalListPageInfo">{page_info iterator=$journals}</div>
-<div id="journalListPageLinks">{page_links anchor="journals" name="journals" iterator=$journals}
+<div id="journalListPageLinks">{page_links anchor="journals" name="journals" iterator=$journals}</div>
 
 {include file="common/footer.tpl"}
 
