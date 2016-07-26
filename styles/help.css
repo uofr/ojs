@@ -44,7 +44,7 @@
 /* hack to set width for non-IE browsers to to a percentage 
    width of container (like it should be), not the window */
 html>body #main {
-	width: 68%;
+	width: 63%;
 } 
 
 #main h4 {
