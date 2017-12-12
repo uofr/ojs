@@ -1,0 +1,33 @@
+.pkp_site_name {
+	.is_img {
+		img {
+			max-height: 500px; // must match height - padding of .is_img
+		}
+	}
+}
+
+.desc_twittericon {
+	width: 33px;
+	height: 36px;
+}
+
+.desc_firefoxicon {
+	width: 114px;
+	height: 44px;
+}
+
+.desc_chromeicon {
+	width: 133px;
+	height: 43px;
+}
+
+.pkp_head_wrapper .pkp_search {
+	@media(min-width: @screen-desktop) {
+		&.is_open {
+			min-width: 35%;
+			input[type="text"] {
+				border: @bg-border;
+			}
+		}	
+	}
+}
