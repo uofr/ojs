@@ -28,6 +28,10 @@
 		</div>
 	{/if}
 
+	<div>
+		<p>{$journalDescription}</p>
+	</div>
+
 	{* Announcements *}
 	{if $numAnnouncementsHomepage && $announcements|@count}
 		<div class="cmp_announcements highlight_first">
