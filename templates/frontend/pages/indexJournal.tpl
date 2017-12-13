@@ -28,9 +28,11 @@
 		</div>
 	{/if}
 
-	<div>
-		<p>{$journalDescription}</p>
-	</div>
+	{if $journalDescription}
+		<div class="journal_description">
+			{$journalDescription}
+		</div>
+	{/if}
 
 	{* Announcements *}
 	{if $numAnnouncementsHomepage && $announcements|@count}
