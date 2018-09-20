@@ -3,8 +3,8 @@
 /**
  * @file classes/submission/reviewer/ReviewerAction.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ReviewerAction
@@ -52,7 +52,7 @@ class ReviewerAction extends Action {
 			$email = new ArticleMailTemplate($reviewerSubmission, $decline?'REVIEW_DECLINE':'REVIEW_CONFIRM');
 			// Must explicitly set sender because we may be here on an access
 			// key, in which case the user is not technically logged in
-			$email->setReplyTo($reviewer->getEmail(), $reviewer->getFullName());
+			$email->setFrom($reviewer->getEmail(), $reviewer->getFullName());
 			if (!$email->isEnabled() || ($send && !$email->hasErrors())) {
 				HookRegistry::call('ReviewerAction::confirmReview', array(&$reviewerSubmission, &$email, $decline));
 				if ($email->isEnabled()) {
@@ -127,12 +127,12 @@ class ReviewerAction extends Action {
 
 		// Only record the reviewers recommendation if
 		// no recommendation has previously been submitted.
-		if ($reviewAssignment->getRecommendation() === null || $reviewAssignment->getRecommendation === '') {
+		if ($reviewAssignment->getRecommendation() === null || $reviewAssignment->getRecommendation() === '') {
 			import('classes.mail.ArticleMailTemplate');
 			$email = new ArticleMailTemplate($reviewerSubmission, 'REVIEW_COMPLETE');
 			// Must explicitly set sender because we may be here on an access
 			// key, in which case the user is not technically logged in
-			$email->setReplyTo($reviewer->getEmail(), $reviewer->getFullName());
+			$email->setFrom($reviewer->getEmail(), $reviewer->getFullName());
 
 			if (!$email->isEnabled() || ($send && !$email->hasErrors())) {
 				HookRegistry::call('ReviewerAction::recordRecommendation', array(&$reviewerSubmission, &$email, $recommendation));

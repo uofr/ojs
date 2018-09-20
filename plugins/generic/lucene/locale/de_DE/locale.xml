@@ -4,8 +4,8 @@
 <!--
   * plugins/generic/lucene/locale/de_DE/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * OJS solr/lucene search plugin localization strings
   * Please contact Marco Tullney, marco.tullney@fu-berlin.de, with any questions regarding this translation.
@@ -99,6 +99,8 @@
 	<message key="plugins.generic.lucene.settings.simdocs">Mehr davon (einen Link "ähnliche Dokumente" für jedes Suchergebnis anzeigen)</message>
 	<message key="plugins.generic.lucene.settings.solrServerSettings">Solr-Server-Einstellungen</message>
 	<message key="plugins.generic.lucene.settings.spellcheck">Alternative Schreibweisen vorschlagen (alternative Suchbegriffe anzeigen)</message>
+	<message key="plugins.generic.lucene.settings.useProxySettings">Proxy-Einstellungen</message>
+	<message key="plugins.generic.lucene.settings.useProxySettingsInstructions">Für die Solr-Webdienstanfragen die Proxy-Einstellungen aus der Datei config.inc.php benutzen.</message>
 	<message key="plugins.generic.lucene.settings.username">Benutzer/innenname</message>
 	<message key="plugins.generic.lucene.settings.usernameInstructions">Der Solr-Suchserver benutzt HTTP BASIC authentication. Bitte geben Sie den Benutzer/innennamen an.</message>
 	<message key="plugins.generic.lucene.settings.usernameRequired">Bitte geben Sie einen gültigen Benutzer/innennamen an, um auf den Solr-Suchserver zuzugreifen (Doppelpunkte sind nicht zulässig).</message>

@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/datacite/classes/DataciteExportDom.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class DataciteExportDom
@@ -164,7 +164,10 @@ class DataciteExportDom extends DOIExportDom {
 		if ($sizesElement) XMLCustomWriter::appendChild($rootElement, $sizesElement);
 
 		// Formats
-		if (!empty($articleFile)) XMLCustomWriter::appendChild($rootElement, $this->_formatsElement($articleFile));
+		if (!empty($articleFile)) {
+			$formatsElement =& $this->_formatsElement($articleFile);
+			if ($formatsElement) XMLCustomWriter::appendChild($rootElement, $formatsElement);
+		}
 
 		// Rights
 		$rightsURL = $article?$article->getLicenseURL():$journal->getSetting('licenseURL');
@@ -260,6 +263,17 @@ class DataciteExportDom extends DOIExportDom {
 		return $locales;
 	}
 
+	/**
+	 * Identify the publisher of the journal (journal title for DataCite citation purposes).
+	 * @param $localePrecedence array
+	 * @return string
+	 */
+	function getPublisher($localePrecedence) {
+		$journal =& $this->getJournal();
+		$publisher = $this->getPrimaryTranslation($journal->getTitle(null), $localePrecedence);
+		assert(!empty($publisher));
+		return $publisher;
+	}
 
 	//
 	// Private helper methods

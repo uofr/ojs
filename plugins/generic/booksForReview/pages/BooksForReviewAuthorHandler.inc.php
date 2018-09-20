@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/booksForReview/pages/BooksForReviewAuthorHandler.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class BooksForReviewAuthorHandler
@@ -125,6 +125,9 @@ class BooksForReviewAuthorHandler extends Handler {
 						$user =& $request->getUser();
 						$userId = $user->getId();
 
+						$userFullName = $user->getFullName();
+						$userEmail = $user->getEmail();
+
 						$editorFullName = $book->getEditorFullName();
 						$editorEmail = $book->getEditorEmail();
 
@@ -135,6 +138,7 @@ class BooksForReviewAuthorHandler extends Handler {
 						);
 
 						$email->addRecipient($editorEmail, $editorFullName);
+						$email->setFrom($userEmail, $userFullName);
 						$email->assignParams($paramArray);
 					}
 					$returnUrl = $request->url(null, 'author', 'requestBookForReview', $bookId);

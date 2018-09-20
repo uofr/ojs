@@ -1,8 +1,8 @@
 {**
  * plugins/themes/custom/settingsForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Custom Theme plugin settings
@@ -61,9 +61,9 @@
 	</tr>
 </table>
 
-<br/>
+<br />
 
-{if !$canSave}{translate key="plugins.theme.custom.notWritable" stylesheetFileLocation=$stylesheetFileLocation}<br/>{/if}
+{if !$canSave}{translate key="plugins.theme.custom.notWritable" stylesheetFileLocation=$stylesheetFileLocation}<br />{/if}
 
 <input type="submit" {if !$canSave}disabled="disabled" {/if}name="save" class="button defaultButton" value="{translate key="common.save"}"/><input type="button" class="button" value="{translate key="common.cancel"}" onclick="history.go(-1)"/>
 </form>

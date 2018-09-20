@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/pln/PLNGatewayPlugin.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PLNGatewayPlugin
@@ -20,6 +20,9 @@ import('lib.pkp.classes.db.DBResultRange');
 import('lib.pkp.classes.core.ArrayItemIterator');
 
 define('PLN_PLUGIN_PING_ARTICLE_COUNT', 12);
+
+// Archive/Tar.php may not be installed, so supress possible error.
+@include_once('Archive/Tar.php');
 
 class PLNGatewayPlugin extends GatewayPlugin {
 	/** @var $parentPluginName string Name of parent plugin */
@@ -131,6 +134,23 @@ class PLNGatewayPlugin extends GatewayPlugin {
 		} else {
 			$templateMgr->assign('termsAccepted', 'no');
 		}
+		
+		$application =& PKPApplication::getApplication();
+		$products =& $application->getEnabledProducts('plugins.generic');
+		$curlVersion = 'not installed';
+		if(function_exists('curl_version')) {
+			$versionArray = curl_version();
+			$curlVersion = $versionArray['version'];
+		}		
+		$prerequisites = array(
+			'phpVersion' => PHP_VERSION,
+			'curlVersion' => $curlVersion,
+			'zipInstalled' => class_exists('ZipArchive') ? 'yes' : 'no',
+			'tarInstalled' => class_exists('Archive_Tar') ? 'yes' : 'no',
+			'acron' => isset($products['acron']) ? 'yes' : 'no',
+			'tasks' => Config::getVar('scheduled_tasks', false) ? 'yes' : 'no',
+		);
+		$templateMgr->assign_by_ref('prerequisites', $prerequisites);
 
 		$termKeys = array_keys($terms);
 		$termsDisplay = array();

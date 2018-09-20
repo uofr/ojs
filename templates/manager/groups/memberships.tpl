@@ -1,8 +1,8 @@
 {**
  * templates/manager/groups/memberships.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display list of groups in journal management.
@@ -25,7 +25,7 @@ $(document).ready(function() { setupTableDND("#dragTable", {/literal}"{url op=mo
 	<li class="current"><a href="{url op="groupMembership" path=$group->getId()}">{translate key="manager.groups.membership}</a></li>
 </ul>
 
-<br/>
+<br />
 
 <div id="membership">
 <table width="100%" class="listing" id="dragTable">

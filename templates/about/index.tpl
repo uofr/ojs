@@ -1,8 +1,8 @@
 {**
  * templates/about/index.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * About the Journal index.
@@ -18,7 +18,7 @@
 	{if not (empty($journalSettings.mailingAddress) && empty($journalSettings.contactName) && empty($journalSettings.contactAffiliation) && empty($journalSettings.contactMailingAddress) && empty($journalSettings.contactPhone) && empty($journalSettings.contactFax) && empty($journalSettings.contactEmail) && empty($journalSettings.supportName) && empty($journalSettings.supportPhone) && empty($journalSettings.supportEmail))}
 		<li><a href="{url op="contact"}">{translate key="about.contact"}</a></li>
 	{/if}
-	<li><a href="{url op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
+	<li id="editorialTeamLink"><a href="{url op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
 	{if $peopleGroups}
 		{iterate from=peopleGroups item=peopleGroup}
 			<li><a href="{url op="displayMembership" path=$peopleGroup->getId()}">{$peopleGroup->getLocalizedTitle()|escape}</a></li>

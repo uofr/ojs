@@ -4,14 +4,14 @@
 <!--
   * locale/cs_CZ/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization strings for the cs_CZ (Čeština) locale.
   * locale information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Czech_%28cs_CZ%29
   -->
 
-<locale name="cs_CZ" full_name = "Čeština">
+<locale name="cs_CZ" full_name="Čeština">
 	<message key="manager.emails.confirmResetAll">Jste si jisti, že chcete resetovat všechny šablony e-mailů v tomto časopisu? Ztratíte tak veškerá přizpůsobení, která jste dopsud udělali.</message>
 	<message key="manager.files.note">Poznámka: Prohlížeč souborů je pokročilý nástroj, který umožňuje zobrazení a přímou manipulaci se soubory a adresáři souvisejícími s časopisem.</message>
 	<message key="manager.groups">Tiráž</message>
@@ -26,7 +26,7 @@
 	<message key="manager.journalManagement">Správa časopisu</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Toto nahradí všechna nastavení časopisu specifická pro lokalizaci, které jste měl pro tuto lokalizaci</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Znovu načíst výchozí nastavení specifická pro lokalizaci</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS může být uživatelům zpřístupněn v kterémkoliv z podporovaných jazyků. Stejně tak může OJS fungovat jako vícejazyčný systém, který uživatelům umožňuje přepínat na každé stránce mezi jazyky a zadávat určitá data v několika dalších jazycích. <br /><br/>Pokud některý jazyk podporovaný OJS není uveden níže, požádejte svého administrátora stránek, aby z rozhraní administrátora požadovaný jazyk nainstaloval. Instrukce pro přidání podpory nových jazyků naleznete v OJS dokumentaci.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS může být uživatelům zpřístupněn v kterémkoliv z podporovaných jazyků. Stejně tak může OJS fungovat jako vícejazyčný systém, který uživatelům umožňuje přepínat na každé stránce mezi jazyky a zadávat určitá data v několika dalších jazycích. <br /><br />Pokud některý jazyk podporovaný OJS není uveden níže, požádejte svého administrátora stránek, aby z rozhraní administrátora požadovaný jazyk nainstaloval. Instrukce pro přidání podpory nových jazyků naleznete v OJS dokumentaci.]]></message>
 	<message key="manager.languages.noneAvailable">Promiňte, žádné další jazyky nejsou dostupné. Pokud chcete s tímto časopisem používat další jazyky, kontaktujte svého administrátora stránek.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Toto bude výchozí jazyk pro stránky vašeho časopisu.</message>
 	<message key="manager.managementPages">Stránky pro správu</message>
@@ -169,7 +169,7 @@
 	<message key="manager.setup.appearInAboutJournal">(K zobrazení v části O časopisu)</message>
 	<message key="manager.setup.authorCopyrightNotice">Oznámení o copyrightu</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Vyžadovat od autorů souhlas s Oznámením o copyrightu jako součást procesu odesílání příspěvku.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Oznámení o copyrightu vložené níže se zobrazí v části O časopisu a v metadatech každé publikované položky. I když je stanovení dohody o copyrightu s autory věcí časopisu, Public Knowledge Project doporučuje použití licence <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a>. Za tímto účelem poskytuje <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">příklad formulace Oznámení o copyrightu</a>, které může být zkopírováno a vloženo do prostoru níže. Je dostupné pro časopisy, které (a) nabízejí otevřený přístup, (b) nabízejí zpožděný otevřený přístup nebo (c) nenabízí otevřený přístup.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Oznámení o copyrightu vložené níže se zobrazí v části O časopisu a v metadatech každé publikované položky. I když je stanovení dohody o copyrightu s autory věcí časopisu, Public Knowledge Project doporučuje použití licence <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Za tímto účelem poskytuje <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">příklad formulace Oznámení o copyrightu</a>, které může být zkopírováno a vloženo do prostoru níže. Je dostupné pro časopisy, které (a) nabízejí otevřený přístup, (b) nabízejí zpožděný otevřený přístup nebo (c) nenabízí otevřený přístup.]]></message>
 	<message key="manager.setup.authorGuidelines">Pokyny pro autory</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Stanovte pro autory bibliografický standard a standard pro formátování textu, které mají použít ve svých příspěvcích do časopisu (například <i>Publication Manual of the American Psychological Association</i>, 5th edition, 2001). Většinou je užitečné, pokud poskytnete příklady běžných způsobů citování časopisů a knih, které budou v příspěvcích použity. Také vymezte patřičné typy doplňkových souborů (například souborů s daty, výzkumné nástroje atd.), k jejichž nahrání společně s příspěvkem by měli být autoři motivováni, aby ve větší míře zpřístupnili čtenářům svou práci.]]></message>
 	<message key="manager.setup.competingInterests">Střet zájmů</message>

@@ -3,8 +3,8 @@
 /**
  * @file classes/author/form/submit/AuthorSubmitStep3Form.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AuthorSubmitStep3Form
@@ -40,7 +40,7 @@ class AuthorSubmitStep3Form extends AuthorSubmitForm {
 		$section = $sectionDao->getSection($article->getSectionId());
 		$abstractWordCount = $section->getAbstractWordCount();
 		if (isset($abstractWordCount) && $abstractWordCount > 0) {
-			$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'author.submit.form.wordCountAlert', create_function('$abstract, $wordCount', 'foreach ($abstract as $localizedAbstract) {return count(explode(" ",strip_tags($localizedAbstract))) < $wordCount; }'), array($abstractWordCount)));
+			$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'author.submit.form.wordCountAlert', create_function('$abstract, $wordCount', 'foreach ($abstract as $localizedAbstract) {return count(preg_split("/\s+/", trim(str_replace("&nbsp;", " ", strip_tags($localizedAbstract))))) <= $wordCount; }'), array($abstractWordCount)));
 		}
 
 	}

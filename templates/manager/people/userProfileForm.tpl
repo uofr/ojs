@@ -1,8 +1,8 @@
 {**
  * templates/manager/people/userProfileForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * User profile form under journal management.
@@ -155,7 +155,7 @@
 	</tr>
 	{/if}
 
-	{if !$implicitAuth}
+	{if !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL}
 		<tr valign="top">
 			<td class="label">{fieldLabel name="password" required=$passwordRequired key="user.password"}</td>
 			<td class="value">
@@ -187,12 +187,12 @@
 			<td class="label">&nbsp;</td>
 			<td class="value"><input type="checkbox" name="mustChangePassword" id="mustChangePassword" value="1"{if $mustChangePassword} checked="checked"{/if} /> <label for="mustChangePassword">{translate key="manager.people.userMustChangePassword"}</label></td>
 		</tr>
-	{/if}{* !$implicitAuth *}
+	{/if}{* !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL *}
 
 	<tr valign="top">
 		<td class="label">{fieldLabel name="affiliation" key="user.affiliation"}</td>
 		<td class="value">
-			<textarea name="affiliation[{$formLocale|escape}]" id="affiliation" rows="5" cols="40" class="textArea">{$affiliation[$formLocale]|escape}</textarea><br/>
+			<textarea name="affiliation[{$formLocale|escape}]" id="affiliation" rows="5" cols="40" class="textArea">{$affiliation[$formLocale]|escape}</textarea><br />
 			<span class="instruct">{translate key="user.affiliation.description"}</span>
 		</td>
 	</tr>

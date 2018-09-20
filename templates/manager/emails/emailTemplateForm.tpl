@@ -1,8 +1,8 @@
 {**
  * templates/manager/emails/emailTemplateForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Basic journal settings under site administration.
@@ -28,7 +28,7 @@
 	<p>{$description|escape}</p>
 {/if}
 
-<br/>
+<br />
 
 {include file="common/formErrors.tpl"}
 
@@ -37,7 +37,7 @@
 {if $isNewTemplate}
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="emailKey" key="manager.emails.emailKey"}</td>
-		<td width="80%" class="value"><input type="text" name="emailKey" value="{$emailKey|escape}" id="emailKey" size="20" maxlength="120" class="textField" /><br/>&nbsp;</td>
+		<td width="80%" class="value"><input type="text" name="emailKey" value="{$emailKey|escape}" id="emailKey" size="20" maxlength="120" class="textField" /><br />&nbsp;</td>
 	</tr>
 {/if}
 

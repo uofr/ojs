@@ -1,8 +1,8 @@
 {**
  * plugins/importexport/mets/issues.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List of issues to potentially export
@@ -87,7 +87,7 @@ function SubmitIfAnyIsChecked() {
 	</tr>
 </table>
 
-<br/>
+<br />
 
 <table width="100%" class="listing">
 	<tr>

@@ -4,15 +4,15 @@
 <!--
   * locale/vi_VN/editor.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the vi_VN (Tiếng Việt) locale.
   *
   -->
 
-<locale name="vi_VN" full_name = "Tiếng Việt">
+<locale name="vi_VN" full_name="Tiếng Việt">
 	<message key="editor.article.reviewForms">Mẫu phiếu Phản biện</message>
 	<message key="editor.article.selectReviewForm">Chọn Mẫu phiếu Phản biện</message>
 	<message key="editor.article.clearReviewForm">Xóa Mẫu phiếu Phản biện</message>

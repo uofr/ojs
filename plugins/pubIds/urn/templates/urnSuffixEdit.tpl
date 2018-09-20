@@ -1,8 +1,8 @@
 {**
  * plugins/pubIds/urn/templates/urnSuffixEdit.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Edit custom URN suffix for an object (issue, article, galley, supp file)
@@ -71,10 +71,10 @@
 			{assign var=enableSuppFileURN value=$pubIdPlugin->getSetting($currentJournal->getId(), "enableSuppFileURN")}
 			{if $enableArticleURN || $enableGalleyURN || $enableSuppFileURN}
 				<br />
-				<span class="instruct">{translate key="plugins.pubIds.urn.editor.excludeIssueObjectsURN.description"}</span><br/>
+				<span class="instruct">{translate key="plugins.pubIds.urn.editor.excludeIssueObjectsURN.description"}</span><br />
 				<input type="submit" name="excludeIssueObjects_{$pubIdPlugin->getPubIdType()|escape}" value="{translate key="plugins.pubIds.urn.editor.excludeIssueObjectsURN"}" class="action" /><br />
 				<br />
-				<span class="instruct">{translate key="plugins.pubIds.urn.editor.clearIssueObjectsURN.description"}</span><br/>
+				<span class="instruct">{translate key="plugins.pubIds.urn.editor.clearIssueObjectsURN.description"}</span><br />
 				<input type="submit" name="clearIssueObjects_{$pubIdPlugin->getPubIdType()|escape}" value="{translate key="plugins.pubIds.urn.editor.clearIssueObjectsURN"}" class="action" /><br />
 			{/if}
 		{/if}

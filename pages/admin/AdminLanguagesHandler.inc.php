@@ -3,8 +3,8 @@
 /**
  * @file pages/admin/AdminLanguagesHandler.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AdminLanguagesHandler
@@ -199,7 +199,7 @@ class AdminLanguagesHandler extends AdminHandler {
 
 		if (in_array($locale, $site->getInstalledLocales())) {
 			$emailTemplateDao =& DAORegistry::getDAO('EmailTemplateDAO');
-			$emailTemplateDao->deleteDefaultEmailTemplatesByLocale($locale);
+			$emailTemplateDao->installEmailTemplates($emailTemplateDao->getMainEmailTemplatesFilename(), false, null, true);
 			$emailTemplateDao->installEmailTemplateData($emailTemplateDao->getMainEmailTemplateDataFilename($locale));
 
 			$user =& $request->getUser();

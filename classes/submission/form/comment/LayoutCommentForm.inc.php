@@ -3,8 +3,8 @@
 /**
  * @file classes/submission/form/comment/LayoutCommentForm.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class LayoutCommentForm
@@ -59,10 +59,10 @@ class LayoutCommentForm extends CommentForm {
 	/**
 	 * Email the comment.
 	 */
-	function email() {
+	function email($request) {
 		$roleDao =& DAORegistry::getDAO('RoleDAO');
 		$userDao =& DAORegistry::getDAO('UserDAO');
-		$journal =& Request::getJournal();
+		$journal =& $request->getJournal();
 
 		// Create list of recipients:
 
@@ -104,7 +104,7 @@ class LayoutCommentForm extends CommentForm {
 			$recipients = array_merge($recipients, $editorAddresses);
 		}
 
-		parent::email($recipients);
+		parent::email($recipients, $request);
 	}
 }
 

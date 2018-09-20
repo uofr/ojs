@@ -3,8 +3,8 @@
 /**
  * @file pages/login/LoginHandler.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class LoginHandler
@@ -108,9 +108,9 @@ class LoginHandler extends PKPLoginHandler {
 		
 		// Set the sender based on the current context
 		if ($journal && $journal->getSetting('supportEmail')) {
-			$mail->setReplyTo($journal->getSetting('supportEmail'), $journal->getSetting('supportName'));
+			$mail->setFrom($journal->getSetting('supportEmail'), $journal->getSetting('supportName'));
 		} else { 
-			$mail->setReplyTo($site->getLocalizedContactEmail(), $site->getLocalizedContactName());
+			$mail->setFrom($site->getLocalizedContactEmail(), $site->getLocalizedContactName());
 		}
 	}
 

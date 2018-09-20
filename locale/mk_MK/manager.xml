@@ -4,8 +4,8 @@
 <!--
   * locale/mk_MK/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings.
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Форми</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Ова ќе го замени секое локација-специфично поставување за списание кое сте го имале за оваа локација</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Вчитај ги стандардните вредности</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS може да се направи достапен за корисниците во било кој од неколкуте поддржани јазици. Исто така, OJS може да работи како повеќејазичен систем, обезбедувајќи ги корисниците со способност да менуваат јазици на секоја страница, и овозможувајќи им на одредени податоци да бидат внесени на неколку други јазици.<br /><br/>Ако јазикот поддржан од OJS не е наведен подолу, замолете го вашиот администратор на сајтот/страната да инсталира поддршка за јазикот од администраторскиот сајт интерфејс. За инструкции за додавање на поддршка за нови јазици, ве молиме консултирајте се со OJS документацијата.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS може да се направи достапен за корисниците во било кој од неколкуте поддржани јазици. Исто така, OJS може да работи како повеќејазичен систем, обезбедувајќи ги корисниците со способност да менуваат јазици на секоја страница, и овозможувајќи им на одредени податоци да бидат внесени на неколку други јазици.<br /><br />Ако јазикот поддржан од OJS не е наведен подолу, замолете го вашиот администратор на сајтот/страната да инсталира поддршка за јазикот од администраторскиот сајт интерфејс. За инструкции за додавање на поддршка за нови јазици, ве молиме консултирајте се со OJS документацијата.]]></message>
 	<message key="manager.languages.noneAvailable">Жалам, но нема други јазици кои се достапни. Контактирајте го вашиот администратор на сајтот/страната ако сакате да користите други јазици со ова списание.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Ова ќе биде стандарден јазик за страната на списанието.</message>
 	<message key="manager.managementPages">Управување со страници</message>
@@ -210,7 +210,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Да се ​​појави во За списанието) </message>
 	<message key="manager.setup.authorCopyrightNotice">Авторски права</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Потребно е авторите да се согласат со Copyright Notice како дел од поднесување процес.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Известување за авторски права ќе се појави "За списанието" и во метаподатоците во секој објавен метаподаток. Иако тоа зависи од списанието за да се утврди природата на неговите авторски права согласност со авторите, PKP проектот препорачува употреба на <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a> лиценца. За таа цел, тој ја предвидува <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">пример за Copyright Notice wording</a> кој може да се сече и залепи во просторот подолу за списанија под (a) да се понуди отворен пристап, (b) да се понуди одложено отворен пристап, или (c) не нудиме отворен пристап.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Известување за авторски права ќе се појави "За списанието" и во метаподатоците во секој објавен метаподаток. Иако тоа зависи од списанието за да се утврди природата на неговите авторски права согласност со авторите, PKP проектот препорачува употреба на <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> лиценца. За таа цел, тој ја предвидува <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">пример за Copyright Notice wording</a> кој може да се сече и залепи во просторот подолу за списанија под (a) да се понуди отворен пристап, (b) да се понуди одложено отворен пристап, или (c) не нудиме отворен пристап.]]></message>
 	<message key="manager.setup.authorGuidelines">Упатство за авторот</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Утврдени се библиографски и форматирани стандарди за авторите на кои се користат за доставени предмети во списанието (на пример, <em>Прирачник за објавување на Американската психолошка асоцијација</ em>, 5th Edition, 2001). Тоа е најчесто корисно за да се обезбеди примери за заеднички цитат на списанија и книги кои се користат во подесувањата. Исто така се идентификуваат видовите на соодветните дополнителни датотеки (на пример, сет на податоци, истражувачки инструменти, итн.) со кои авторите треба да бидат охрабрени да прикачат, во прилог на нивното поднесување, за подобрување на работата на читателите.]]></message>
 	<message key="manager.setup.competingInterests">Конкурентни интереси</message>

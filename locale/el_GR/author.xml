@@ -4,15 +4,15 @@
 <!--
   * locale/el_GR/author.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the el_GR (ελληνικά) locale.
   *
   -->
 
-<locale name="el_GR" full_name = "Greek">
+<locale name="el_GR" full_name="ελληνικά">
 	<message key="author.submit">Νέα υποβολή</message>
 	<message key="author.track">Ενεργές Υποβολές</message>
 	<message key="author.competingInterests"><![CDATA[Συγκρουόμενα&nbsp;συμφέροντα <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">Πολιτική Συγκρουόμενων Συμφερόντων</a>]]></message>

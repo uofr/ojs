@@ -1,8 +1,8 @@
 {**
  * plugins/generic/translator/localeFile.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Edit a specific locale file.
@@ -59,18 +59,18 @@
 			<input type="hidden" name="changes[]" value="{$key|escape}" />
 			{assign var=referenceValue value=$referenceLocaleContents.$key}
 			{if ($value|explode:"\n"|@count > 1) || (strlen($value) > 80) || ($referenceValue|explode:"\n"|@count > 1) || (strlen($referenceValue) > 80)}
-				{translate key="plugins.generic.translator.file.reference"}<br/>
+				{translate key="plugins.generic.translator.file.reference"}<br />
 				<textarea name="junk[]" class="textArea" rows="5" cols="50" readonly="true">
 {$referenceValue|escape}
 </textarea>
-				{translate key="plugins.generic.translator.file.translation"}<br/>
+				{translate key="plugins.generic.translator.file.translation"}<br />
 				<textarea name="changes[]" class="textArea" rows="5" cols="50">
 {$value|escape}
 </textarea>
 			{else}
-				{translate key="plugins.generic.translator.file.reference"}<br/>
-				<input name="junk[]" class="textField" class="textField" type="text" size="50" readonly="true" value="{$referenceValue|escape}" /><br/>
-				{translate key="plugins.generic.translator.file.translation"}<br/>
+				{translate key="plugins.generic.translator.file.reference"}<br />
+				<input name="junk[]" class="textField" class="textField" type="text" size="50" readonly="true" value="{$referenceValue|escape}" /><br />
+				{translate key="plugins.generic.translator.file.translation"}<br />
 				<input name="changes[]" class="textField" class="textField" type="text" size="50" value="{$value|escape}" />
 			{/if}
 		</td>

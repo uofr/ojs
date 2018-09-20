@@ -4,8 +4,8 @@
 <!--
   * @file plugins/generic/objectsForReview/locale/fr_FR/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Objects for review plugin localization strings
@@ -141,7 +141,6 @@
 	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.notesInstructions">Pour le rédacteur uniquement. Non publié comme partie intégrante du compte rendu de l'objet.</message>
 
 	<!-- Objects For Review Assignments Management by Editor -->
-	<message key="plugins.generic.objectsForReview.editor.objectsForReview">Objects For Review</message>
 	<message key="plugins.generic.objectsForReview.editor.assignments">Assignations</message>
 	<!--  Actions -->
 	<message key="plugins.generic.objectsForReview.editor.select">Sélectionner</message>

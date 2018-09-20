@@ -4,15 +4,15 @@
 <!--
   * locale/gl_ES/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the gl_ES (Galego) locale.
   *
   -->
 
-<locale name="gl_ES" full_name = "Galego">
+<locale name="gl_ES" full_name="Galego">
 	<message key="manager.emails.confirmResetAll">Tes a certeza de que queres restaurar todas os modelos de correo-e desta revista? Perderád calquera personalización que teñas realizado.</message>
 	<message key="manager.files.note">Nota: o visor de ficheiros é unha ferramenta avanzada que permete ver e administrar directamente os ficheiros e directorios asociados con unha revista.</message>
 	<message key="manager.groups">Equipo de traballo</message>
@@ -27,7 +27,7 @@
 	<message key="manager.journalManagement">Administración da revista</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Isto substituirá calquera configuración específica deste locale</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Recargar configuración por defecto deste locale</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS pode utilizar calquera dos idiomas dispoñíbeis. Tamén pode executarse como un sistema multi-idioma, permitindo ao usuario seleccionar o idioma de cada páxina, e permitindo que alguns dados se introduzan en varios idiomas. <br /><br/>Si su idioma no aparece en la lista siguiente, pida al administrador del sitio que instale el idioma. Para instrucciones sobre instalación de idiomas consulte la documentación de OJS.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS pode utilizar calquera dos idiomas dispoñíbeis. Tamén pode executarse como un sistema multi-idioma, permitindo ao usuario seleccionar o idioma de cada páxina, e permitindo que alguns dados se introduzan en varios idiomas. <br /><br />Si su idioma no aparece en la lista siguiente, pida al administrador del sitio que instale el idioma. Para instrucciones sobre instalación de idiomas consulte la documentación de OJS.]]></message>
 	<message key="manager.languages.noneAvailable">Sentímolo, non hai idiomas  dispoñíbeis. Contacta co/ca administrador/a deste sitio se desexas empregar outros idiomas con esta revista.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Este será o idioma por defecto do sitio.</message>
 	<message key="manager.managementPages">Páxinas de administración</message>
@@ -672,7 +672,7 @@
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Notificar ao Administrador de Subscricións por email logo da renovación online dunha Subscrición Individual.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewInstitutional">Notificar ao Administrador de Subscricións por email logo da renovación online dunha Subscrición Institucional.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentPurchaseInstitutionalDescription"><![CDATA[<strong>Nota:</strong> As Subscricións Institutionais mercadas online precisan da aprobación do dominio e rangos de IP, e da activación da subscrición polo Administrador Subscricións.]]></message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[O aviso de Copyright exposto en baixo aparecerá na sección "Sobre nós" da revista e en cada metadado dos ítems publicados.  Se ben corresponde a revista determinar a natureza do seu acordo de dereito de autor cos autores, o Proxecto de Coñecimento Público (PKP) recomenda o uso da licencia<a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a>. Para este objectivo, proporciónase o <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemplo de aviso de Copyright </a> que pode  ser copiado e pegado no espazo inferior para revistas que (a) ofrezan acceso aberto, (b) ofrezan acceso aberto retardado, o (c) no ofrezan acceso aberto.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[O aviso de Copyright exposto en baixo aparecerá na sección "Sobre nós" da revista e en cada metadado dos ítems publicados.  Se ben corresponde a revista determinar a natureza do seu acordo de dereito de autor cos autores, o Proxecto de Coñecimento Público (PKP) recomenda o uso da licencia<a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Para este objectivo, proporciónase o <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemplo de aviso de Copyright </a> que pode  ser copiado e pegado no espazo inferior para revistas que (a) ofrezan acceso aberto, (b) ofrezan acceso aberto retardado, o (c) no ofrezan acceso aberto.]]></message>
 	<message key="manager.groups.publishEmails">Publicar enderezos de correo electrónico dos membros</message>
 	<message key="manager.language.submissions">Peticións</message>
 	<message key="manager.plugins.versionFileInvalid">O ficheiro version.xml no directorio de plugins contén dados inválidos.</message>

@@ -4,15 +4,15 @@
 <!--
   * plugins/generic/translator/locale/tr_TR/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the tr_TR (Türkçe) locale.
   *
   -->
  
-<locale name="tr_TR" full_name = "Turkish">
+<locale name="tr_TR" full_name="Türkçe">
 	<message key="plugins.generic.translator.name">Çeviri Eklentisi</message>
 	<message key="plugins.generic.translator.description">Bu eklenti çeviri dosyaları için web tabanlı düzenleme sağlar.</message>
 	<message key="plugins.generic.translator.longdescription">Bu alan Site Yöneticisi'nin ADS dil dosyalarının çevirilerini değiştirebileceği,  kontrol edebileceği ve  güncelleme yapabilceği alandır. Bu site geniş ve tek bir ADS dergisini özelleştirmek için kullanılmamalıdır. Eğer gelecek sürümler için bir çeviri düzeltmesi yaprsanız veya oluşturursanız lütfen bu çalışmalarınızı Public Knowledge Project gönderiniz.</message>

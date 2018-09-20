@@ -1,8 +1,8 @@
 {**
  * templates/admin/languages.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to edit site language settings.
@@ -49,7 +49,7 @@
 		</table>
 		<span class="instruct">{translate key="admin.languages.supportedLocalesInstructions"}</span>
 		{if $incompleteLocaleFound}
-			<br/>
+			<br />
 			<span class="formError">*</span>&nbsp;{translate key="admin.locale.maybeIncomplete"}
 		{/if}{* $incompleteLocaleFound *}
 	</td>

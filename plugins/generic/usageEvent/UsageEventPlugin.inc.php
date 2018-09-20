@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/usageEvent/UsageEventPlugin.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class UsageEventPlugin
@@ -181,7 +181,7 @@ class UsageEventPlugin extends GenericPlugin {
 					if ($galley->isHTMLGalley()) {
 						$pubObject =& $galley;
 						$assocType = ASSOC_TYPE_GALLEY;
-						$canonicalUrlParams = array($article->getBestArticleId(), $pubObject->getBestGalleyId($journal));
+						$canonicalUrlParams = array($article->getId(), $pubObject->getId($journal));
 						$idParams = array('a' . $article->getId(), 'g' . $pubObject->getId());
 					} else {
 						// This is an access to an intermediary galley page which we
@@ -192,12 +192,12 @@ class UsageEventPlugin extends GenericPlugin {
 					if ($article) {
 						$pubObject =& $article;
 						$assocType = ASSOC_TYPE_ARTICLE;
-						$canonicalUrlParams = array($pubObject->getBestArticleId($journal));
+						$canonicalUrlParams = array($pubObject->getId($journal));
 						$idParams = array('a' . $pubObject->getId());
 					} else {
 						$pubObject =& $issue;
 						$assocType = ASSOC_TYPE_ISSUE;
-						$canonicalUrlParams = array($pubObject->getBestIssueId($journal));
+						$canonicalUrlParams = array($pubObject->getId($journal));
 						$idParams = array('i' . $pubObject->getId());
 					}
 				}
@@ -210,7 +210,7 @@ class UsageEventPlugin extends GenericPlugin {
 				$article =& $args[0];
 				$pubObject =& $args[1];
 				$assocType = ASSOC_TYPE_GALLEY;
-				$canonicalUrlParams = array($article->getBestArticleId(), $pubObject->getBestGalleyId($journal));
+				$canonicalUrlParams = array($article->getId(), $pubObject->getId($journal));
 				$idParams = array('a' . $article->getId(), 'g' . $pubObject->getId());
 				$downloadSuccess = true;
 				$canonicalUrlOp = 'view';
@@ -218,11 +218,14 @@ class UsageEventPlugin extends GenericPlugin {
 			// Article galley (except for HTML and remote galley).
 			case 'ArticleHandler::viewFile':
 			case 'ArticleHandler::downloadFile':
+				$article =& $args[0];
 				$pubObject =& $args[1];
+				$fileId =& $args[2];
+				// if file is not a gallay file (e.g. CSS or images), there is no usage event.
+				if ($pubObject->getFileId() != $fileId) return false;
 				$assocType = ASSOC_TYPE_GALLEY;
 				$canonicalUrlOp = 'download';
-				$article =& $args[0];
-				$canonicalUrlParams = array($article->getBestArticleId(), $pubObject->getBestGalleyId($journal));
+				$canonicalUrlParams = array($article->getId(), $pubObject->getId($journal));
 				$idParams = array('a' . $article->getId(), 'g' . $pubObject->getId());
 				break;
 
@@ -232,7 +235,7 @@ class UsageEventPlugin extends GenericPlugin {
 				$assocType = ASSOC_TYPE_SUPP_FILE;
 				$canonicalUrlOp = 'downloadSuppFile';
 				$article =& $args[0];
-				$canonicalUrlParams = array($article->getBestArticleId(), $pubObject->getBestSuppFileId($journal));
+				$canonicalUrlParams = array($article->getId(), $pubObject->getId($journal));
 				$idParams = array('a' . $article->getId(), 's' . $pubObject->getId());
 				break;
 
@@ -242,7 +245,7 @@ class UsageEventPlugin extends GenericPlugin {
 				$assocType = ASSOC_TYPE_ISSUE_GALLEY;
 				$canonicalUrlOp = 'download';
 				$issue =& $args[0];
-				$canonicalUrlParams = array($issue->getBestIssueId(), $pubObject->getBestGalleyId($journal));
+				$canonicalUrlParams = array($issue->getId(), $pubObject->getId($journal));
 				$idParams = array('i' . $issue->getId(), 'ig' . $pubObject->getId());
 				break;
 
@@ -291,7 +294,7 @@ class UsageEventPlugin extends GenericPlugin {
 		$requestBaseUrl = $request->getBaseUrl();
 		if ($requestBaseUrl !== $configBaseUrl) {
 			// Make sure it's not an url override (no alias on that case).
-			if (!in_array($requestBaseUrl, Config::getContextBaseUrls()) && 
+			if (!in_array($requestBaseUrl, Config::getContextBaseUrls()) &&
 					$requestBaseUrl !== Config::getVar('general', 'base_url[index]')) {
 				// Alias found, replace it by base_url from config file.
 				// Make sure we use the correct base url override value for the context, if any.

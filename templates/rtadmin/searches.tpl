@@ -1,8 +1,8 @@
 {**
  * templates/rtadmin/searches.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RTAdmin search list
@@ -61,9 +61,9 @@ $(document).ready(function() { setupTableDND("#dragTable",
 		</tr>
 	{/if}
 	</table>
-<br/>
+<br />
 
-<a href="{url op="createSearch" path=$version->getVersionId()|to_array:$context->getContextId()}" class="action">{translate key="rt.admin.searches.createSearch"}</a><br/>
+<a href="{url op="createSearch" path=$version->getVersionId()|to_array:$context->getContextId()}" class="action">{translate key="rt.admin.searches.createSearch"}</a><br />
 </div>
 
 {include file="common/footer.tpl"}

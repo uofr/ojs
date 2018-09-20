@@ -1,8 +1,8 @@
 {**
  * templates/submission/layout/galleyForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to add/edit a galley.
@@ -82,7 +82,7 @@
 {/if}
 </table>
 </div>
-<br/>
+<br />
 
 {foreach from=$pubIdPlugins item=pubIdPlugin}
 	{assign var=pubIdMetadataFile value=$pubIdPlugin->getPubIdMetadataFile()}

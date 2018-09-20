@@ -7,8 +7,8 @@
 /**
  * @file classes/sectionEditor/form/CreateReviewerForm.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CreateReviewerForm
@@ -197,7 +197,7 @@ class CreateReviewerForm extends Form {
 			// Send welcome email to user
 			import('classes.mail.MailTemplate');
 			$mail = new MailTemplate('REVIEWER_REGISTER');
-			$mail->setReplyTo(null);
+			$mail->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 			$mail->assignParams(array('username' => $this->getData('username'), 'password' => $password, 'userFullName' => $user->getFullName()));
 			$mail->addRecipient($user->getEmail(), $user->getFullName());
 			$mail->send();

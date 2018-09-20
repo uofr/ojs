@@ -1,8 +1,8 @@
 {**
  * templates/rt/context.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Article reading tools -- context view page.
@@ -150,7 +150,7 @@
 	{/foreach}
 </table>
 
-<a href="http://pkp.sfu.ca/ojs/suggestRt" target="_new" class="action">{translate key="rt.search.suggest"}</a><br/>
+<a href="http://pkp.sfu.ca/ojs/suggestRt" target="_new" class="action">{translate key="rt.search.suggest"}</a><br />
 </div>
 
 {include file="rt/footer.tpl"}

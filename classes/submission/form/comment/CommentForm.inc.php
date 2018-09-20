@@ -3,8 +3,8 @@
 /**
  * @file classes/submission/form/comment/CommentForm.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CommentForm
@@ -128,11 +128,11 @@ class CommentForm extends Form {
 	function email($recipients, $request) {
 		$article = $this->article;
 		$articleCommentDao =& DAORegistry::getDAO('ArticleCommentDAO');
-		$journal =& Request::getJournal();
+		$journal =& $request->getJournal();
 
 		import('classes.mail.ArticleMailTemplate');
 		$email = new ArticleMailTemplate($article, 'SUBMISSION_COMMENT');
-		$email->setReplyTo($this->user->getEmail(), $this->user->getFullName());
+		$email->setFrom($this->user->getEmail(), $this->user->getFullName());
 
 		$commentText = $this->getData('comments');
 

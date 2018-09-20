@@ -1,8 +1,8 @@
 {**
  * @file plugins/importexport/datacite/templates/index.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * DataCite plug-in home page.
@@ -12,7 +12,7 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<br/>
+<br />
 
 <h3>{translate key="plugins.importexport.common.settings"}</h3>
 {if !empty($configurationErrors)}

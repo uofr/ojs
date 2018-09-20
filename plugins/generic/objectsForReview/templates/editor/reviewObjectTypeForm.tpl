@@ -1,8 +1,8 @@
 {**
  * @file plugins/generic/objectsForReview/templates/editor/reviewObjectTypeForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to create/modify a review object type.
@@ -40,7 +40,7 @@ function togglePossibleOptions(newValue, multipleOptionsTypesString) {
 	</ul>
 {/if}
 
-<br/>
+<br />
 
 <form id="reviewObjectTypeForm" method="post" action="{url op="updateReviewObjectType"}">
 {if $typeId}
@@ -96,7 +96,7 @@ function togglePossibleOptions(newValue, multipleOptionsTypesString) {
 		{if $notFirstOptionItem}
 				</table>
 		{/if}
-		<br/>
+		<br />
 		<input type="submit" name="addOption" value="{translate key="plugins.generic.objectsForReview.editor.objectMetadata.addOptionItem"}" class="button" />
 	</td>
 </tr>

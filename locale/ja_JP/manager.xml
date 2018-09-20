@@ -4,15 +4,15 @@
 <!--
   * locale/ja_JP/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the ja_JP (日本語) locale.
   *
   -->
 
-<locale name="ja_JP" full_name = "日本語">
+<locale name="ja_JP" full_name="日本語">
 	<message key="manager.emails.confirmResetAll">この雑誌のメールテンプレートをリセットしてもよいですか。実行すると、カスタマイズしたメールが失われることになります。</message>
 	<message key="manager.files.note">注: ファイルブラウザは、雑誌に関係するファイルやディレクトリを直接、閲覧・操作するための新機能です。</message>
 	<message key="manager.groups">編集委員会</message>
@@ -173,7 +173,7 @@
 	<message key="manager.setup.enableAnnouncements">雑誌管理者による告知文の追加機能を有効にする。</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">雑誌ホームページに最新の告知文を</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">件表示する。</message>
-	<message key="manager.setup.enablePageNumber">アイテムのページ数を独自に計算して、目次に入力する（例えば、pp. 13-26）。</message>
+	<message key="manager.setup.enablePageNumber">アイテムのページ数を独自に計算して、目次に入力する（例えば、13-26）。</message>
 	<message key="manager.setup.enablePublicArticleId">出版アイテムを識別するためにカスタム識別子を使用する。</message>
 	<message key="manager.setup.enablePublicIssueId">巻号を識別するためにカスタム識別子を使用する。</message>
 	<message key="manager.setup.enablePublicSuppFileId">論文補足ファイルを識別するためにカスタム識別子を使用する。</message>
@@ -601,7 +601,7 @@
 	<message key="manager.language.ui">ユーザインターフェース</message>
 	<message key="manager.language.forms">フォーム</message>
 	<message key="manager.sections.wordCount">字数カウント</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJSはサポートしている言語のうち任意の言語で利用者にサービスを提供することができます。また、OJSは一部、多言語システムとして運用することもできます。その結果、ユーザはページごとに言語を切り替えることができ、また、デフォルト言語に加えてさらに2つの言語でデータを入力することができます。<br /><br/>OJSがサポートしている言語が以下に表示されていない場合は、サイト管理用のインターフェースを使って言語をインストールするようサイト管理者に依頼してください。サポート言語を追加する方法については、システムに添付されているOJS文書をご覧ください。]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJSはサポートしている言語のうち任意の言語で利用者にサービスを提供することができます。また、OJSは一部、多言語システムとして運用することもできます。その結果、ユーザはページごとに言語を切り替えることができ、また、デフォルト言語に加えてさらに2つの言語でデータを入力することができます。<br /><br />OJSがサポートしている言語が以下に表示されていない場合は、サイト管理用のインターフェースを使って言語をインストールするようサイト管理者に依頼してください。サポート言語を追加する方法については、システムに添付されているOJS文書をご覧ください。]]></message>
 	<message key="manager.setup.form.doiPrefixPattern">DOI は 10.xxxx という形式でなければなりません。</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN（国際標準逐次刊行物番号）は逐次刊行物（電子版を含む）を識別する8桁の数字です。ISSNは、本部を置くユネスコとフランス政府による支援を受けた国際センターの調整の元、各国の国内センターの世界的なネットワークにより管理されています。ISSN番号は、<a href="http://www.issn.org" target="_new">ISSN Webサイト</a>で入手することができます。ISSNの入手は、雑誌運営のいつの時点で行っても構いません。]]></message>
 	<message key="manager.setup.publisherNoteDescription">この文章は「この雑誌について」ページの「雑誌スポンサー」の「出版者」ヘッダと出版者名/URLの間に表示されます。</message>
@@ -644,7 +644,7 @@
 	<message key="manager.subscriptions.form.userProfileInstructions">備考: 下記の変更はユーザのシステム全体のプロフィールに反映されます。</message>
 	<message key="manager.setup.history">雑誌の履歴</message>
 	<message key="manager.setup.historyDescription">この文章は雑誌ページの「この雑誌について」に表示され，タイトル，編集委員会，その他の事項など雑誌の出版履歴に関する変更を記述しておくために使用することができます。</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[ここで入力された著作権表示は「この雑誌について」および出版される各アイテムのメタデータに表示されます。著者との著作権契約の内容は各雑誌が決定することですが、パブリック･ナレッジ･プロジェクトでは、<a href="http://creativecommons.org" target="_new" class="action">クリエイティブ･コモンズ</a>ライセンスの使用を推奨しています。そのため、(a) オープンアクセスを提供する、(b) エンバーゴ付きオープンアクセスを提供する、(c) オープンアクセスを提供しない、雑誌が以下の入力欄にコピー&ペースできる<a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">著作権表示案</a>を提供しています。]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[ここで入力された著作権表示は「この雑誌について」および出版される各アイテムのメタデータに表示されます。著者との著作権契約の内容は各雑誌が決定することですが、パブリック･ナレッジ･プロジェクトでは、<a href="https://creativecommons.org" target="_new" class="action">クリエイティブ･コモンズ</a>ライセンスの使用を推奨しています。そのため、(a) オープンアクセスを提供する、(b) エンバーゴ付きオープンアクセスを提供する、(c) オープンアクセスを提供しない、雑誌が以下の入力欄にコピー&ペースできる<a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">著作権表示案</a>を提供しています。]]></message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[雑誌に投稿するアイテムに関して著者が従うべき書誌･書式標準（例: <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001）を設定してください。投稿に使用すべき雑誌および図書の一般的な引用書式例の提供も役に立つでしょう。さらに、読者による研究の再現を容易にするために、著者にアップロードを推奨する投稿物以外の適当な補足ファイル（データセットや研究機器など）の種類を指定してください。]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJSは、<a href="http://www.openarchives.org/" target="_blank">オープン･アーカイブズ・イニシアティブ</a>のメタデータハーベスティングプロトコル（OAI-PMH）に準拠しています。このプロトコルは、世界規模の電子的研究情報資源へのインデックス化アクセスを提供する標準です。著者は以下に示すテンプレートを使って、投稿物に関するメタデータを提供することになります。雑誌管理者は、インデックス化するカテゴリを選択し、付与すべきインデックスの例や複数の検索語の入力法（例: インデックス1;インデックス2のようにセミコロンで区切る）を著者に示すべきです。記入例は「例:」や「例えば」を使って示すべきです。]]></message>
 	<message key="manager.setup.publicationScheduleDescription">雑誌アイテムは、ある巻号の一部として目次と共にまとめて出版することができます。また、準備ができたアイテムを「最新号」の目次に追加することにより直ちに出版することもできます。この雑誌がどちらの方式を採用するか、また、予定する出版頻度を読書に示してください（これは、「この雑誌について」に表示されます）。</message>

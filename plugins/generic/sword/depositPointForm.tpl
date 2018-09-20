@@ -1,8 +1,8 @@
 {**
  * plugins/generic/sword/depositPointForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * SWORD plugin settings
@@ -33,7 +33,7 @@
 	<tr valign="top">
 		<td class="label"><label for="swordPassword">{translate key="user.password"}</label></td>
 		<td class="value">
-			<input type="password" name="depositPoint[password]" id="swordPassword" value="{$depositPoint.password|escape}" size="20" maxlength="90" /><br/>
+			<input type="password" name="depositPoint[password]" id="swordPassword" value="{$depositPoint.password|escape}" size="20" maxlength="90" /><br />
 			<span class="instruct">{translate key="plugins.generic.sword.depositPoints.password.description"}</span>
 		</td>
 	</tr>

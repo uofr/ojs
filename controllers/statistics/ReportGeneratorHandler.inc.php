@@ -3,8 +3,8 @@
 /**
  * @file controllers/statistics/ReportGeneratorHandler.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ReportGeneratorHandler
@@ -46,6 +46,7 @@ class ReportGeneratorHandler extends Handler {
 			$json->setContent($formContent);
 		}
 
+		header('Content-Type: application/json');
 		return $json->getString();
 	}
 
@@ -67,6 +68,7 @@ class ReportGeneratorHandler extends Handler {
 			$json->setStatus(false);
 		}
 
+		header('Content-Type: application/json');
 		return $json->getString();
 	}
 
@@ -97,6 +99,7 @@ class ReportGeneratorHandler extends Handler {
 			$json->setContent($articlesInfo);
 		}
 
+		header('Content-Type: application/json');
 		return $json->getString();
 	}
 
@@ -129,6 +132,7 @@ class ReportGeneratorHandler extends Handler {
 			}
 		}
 
+		header('Content-Type: application/json');
 		return $json->getString();
 	}
 
@@ -166,6 +170,9 @@ class ReportGeneratorHandler extends Handler {
 		$columns = $reportPlugin->getColumns($metricType);
 		$columns = array_flip(array_intersect(array_flip(StatisticsHelper::getColumnNames()), $columns));
 
+		$optionalColumns = $reportPlugin->getOptionalColumns($metricType);
+		$optionalColumns = array_flip(array_intersect(array_flip(StatisticsHelper::getColumnNames()), $optionalColumns));
+
 		$objects = $reportPlugin->getObjectTypes($metricType);
 		$objects = array_flip(array_intersect(array_flip(StatisticsHelper::getObjectTypeString()), $objects));
 
@@ -185,7 +192,7 @@ class ReportGeneratorHandler extends Handler {
 		$reportTemplate = $request->getUserVar('reportTemplate');
 
 		import('controllers.statistics.form.ReportGeneratorForm');
-		$reportGeneratorForm = new ReportGeneratorForm($columns,
+		$reportGeneratorForm = new ReportGeneratorForm($columns, $optionalColumns,
 			$objects, $fileTypes, $metricType, $defaultReportTemplates, $reportTemplate);
 
 		return $reportGeneratorForm;

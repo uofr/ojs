@@ -4,8 +4,8 @@
 <!--
   * locale/en_US/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings.
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Forms</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">This will replace any locale-specific journal settings you had for this locale</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Reload defaults</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS can be made available to users in any of several supported languages. As well, OJS can operate as a multilingual system, providing users with an ability to toggle between languages on each page, and allowing certain data to be entered in several additional languages.<br /><br/>If a language supported by OJS is not listed below, ask your site administrator to install the language from the site administration interface. For instructions on adding support for new languages, please consult the OJS documentation.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS can be made available to users in any of several supported languages. As well, OJS can operate as a multilingual system, providing users with an ability to toggle between languages on each page, and allowing certain data to be entered in several additional languages.<br /><br />If a language supported by OJS is not listed below, ask your site administrator to install the language from the site administration interface. For instructions on adding support for new languages, please consult the OJS documentation.]]></message>
 	<message key="manager.languages.noneAvailable">Sorry, no additional languages are available. Contact your site administrator if you wish to use additional languages with this journal.</message>
 	<message key="manager.languages.primaryLocaleInstructions">This will be the default language for the journal site.</message>
 	<message key="manager.managementPages">Management Pages</message>
@@ -210,7 +210,7 @@
 	<message key="manager.setup.appearInAboutJournal">(To appear in About the Journal) </message>
 	<message key="manager.setup.authorCopyrightNotice">Copyright Notice</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Require authors to agree to the Copyright Notice in the submission process.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[The Copyright Notice will appear in About the Journal. It should describe for readers and authors whether the copyright holder is the author, journal, or a third party. It should include additional licensing agreements (e.g. <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a> licenses) that grant rights to readers (see <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">examples</a>), and it should provide the means for securing permissions, if necessary, for the use of the journal's content.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[The Copyright Notice will appear in About the Journal. It should describe for readers and authors whether the copyright holder is the author, journal, or a third party. It should include additional licensing agreements (e.g. <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licenses) that grant rights to readers (see <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">examples</a>), and it should provide the means for securing permissions, if necessary, for the use of the journal's content.]]></message>
 	<message key="manager.setup.authorGuidelines">Author Guidelines</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Set out for authors the bibliographic and formatting standards used for items submitted to the journal (e.g., <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001). It is often helpful to provide examples of the common citation formats for journals and books to be used in submissions. Also identify the types of appropriate Supplementary Files (e.g., data-sets, research instruments, etc.) which authors should be encouraged to upload, in addition to their submission, to enhance readers' engagement with their work.]]></message>
 	<message key="manager.setup.competingInterests">Competing Interests</message>
@@ -271,14 +271,12 @@
 	<message key="manager.setup.emailBounceAddressDescription">Any undeliverable emails will result in an error message to this address.</message>
 	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Note:</strong> To activate this option, the site administrator must enable the <tt>allow_envelope_sender</tt> option in the OJS configuration file. Additional server configuration may be required to support this functionality (which may not be possible on all servers), as indicated in the OJS documentation.]]></message>
 	<message key="manager.setup.emails">Email Identification</message>
-	<message key="manager.setup.emailHeader">Email Header</message>
-	<message key="manager.setup.emailHeaderDescription">The prepared emails that are sent by the system on behalf of the journal will begin with the following header. These emails will be addressed from the Principal Contact, so it's important to clarify that the Primary Contact is not necessarily responsible for the message content, which may be sent on behalf of a different user.</message>
 	<message key="manager.setup.emailSignature">Signature</message>
 	<message key="manager.setup.emailSignatureDescription">The prepared emails that are sent by the system on behalf of the journal will have the following signature added to the end. The body of the prepared emails are available for editing under Journal Management.</message>
 	<message key="manager.setup.enableAnnouncements">Enable Journal Managers to add journal announcements.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Display</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">of the most recent announcements on the journal homepage.</message>
-	<message key="manager.setup.enablePageNumber">Page numbers for items will be calculated and entered manually in the Table of Contents (e.g., pp. 13-26).</message>
+	<message key="manager.setup.enablePageNumber">Page numbers for items will be calculated and entered manually in the Table of Contents (e.g., 13-26).</message>
 	<message key="manager.setup.enablePublicArticleId">Custom identifiers will be used to identify published items.</message>
 	<message key="manager.setup.enablePublicGalleyId">Custom identifiers will be used to identify galleys (e.g. HTML or PDF files) for published items.</message>
 	<message key="manager.setup.enablePublicIssueId">Custom identifiers will be used to identify issues.</message>
@@ -510,6 +508,7 @@
 	</message>
 	<message key="manager.statistics.reports">Report Generator</message>
 	<message key="manager.statistics.reports.aggregationColumns">Aggregate stats by:</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Items in italic and marked with * represent data that is optional to the current way of counting statistics in OJS (metric type). You might have that data or not, depending on your statistics plugin configuration.</message>
 	<message key="manager.statistics.reports.defaultReportTemplates">Default report templates</message>
 	<message key="manager.statistics.reports.defaultReport.articleDownloads">Article file downloads</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstract">Article abstract page views</message>
@@ -529,7 +528,7 @@
 	<message key="manager.statistics.reports.objectType">Object Type</message>
 	<message key="manager.statistics.reports.objectId">Object id</message>
 	<message key="manager.statistics.reports.objectId.label">Define one or more object ids, comma separated (e.g. 1,2,3,4,5).</message>
-	<message key="manager.statistics.reports.today">Today</message>
+	<message key="manager.statistics.reports.yesterday">Yesterday</message>
 	<message key="manager.statistics.reports.currentMonth">Current month</message>
 	<message key="manager.statistics.reports.orderBy">Order by</message>
 	<message key="manager.statistics.reports.orderDir">Direction</message>

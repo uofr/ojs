@@ -1,8 +1,8 @@
 {**
  * @file plugins/importexport/medra/templates/settings.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * mEDRA plugin settings
@@ -91,6 +91,14 @@
 					<input type="password" name="password" value="{$password|escape}" size="20" maxlength="50" id="password" class="textField" />
 				</td>
 			</tr>
+ 			<tr><td colspan="2">&nbsp;</td></tr>
+ 			<tr valign="top">
+ 				<td width="20%" class="label">{fieldLabel name="automaticRegistration" key="plugins.importexport.medra.settings.form.automaticRegistration"}</td>
+ 				<td width="80%" class="value">
+ 					<input type="checkbox" name="automaticRegistration" id="automaticRegistration" value="1" {if $automaticRegistration} checked="checked"{/if} />&nbsp;{translate key="plugins.importexport.medra.settings.form.automaticRegistration.description" unregisteredURL=$unregisteredURL}
+ 				</td>
+ 			</tr>
+ 			<tr><td colspan="2">&nbsp;</td></tr>
 		</table>
 
 		<p><span class="formRequired">{translate key="common.requiredField"}</span></p>

@@ -1,8 +1,8 @@
 {**
  * templates/search/search.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * A unified search interface.
@@ -19,7 +19,13 @@
 			$('#searchForm').pkpHandler('$.pkp.pages.search.SearchFormHandler');
 		{rdelim});
 	</script>
-	<form id="searchForm" action="{url op="search"}">
+
+	{url|assign:"searchFormUrl" op="search" escape=false}
+	{$searchFormUrl|parse_url:$smarty.const.PHP_URL_QUERY|parse_str:$formUrlParameters}
+	<form id="searchForm" action="{$searchFormUrl|strtok:"?"|escape}">
+		{foreach from=$formUrlParameters key=paramKey item=paramValue}
+			<input type="hidden" name="{$paramKey|escape}" value="{$paramValue|escape}"/>
+		{/foreach}
 		<table class="data">
 			<tr valign="top">
 				<td class="label"><label for="query">{translate key="search.searchAllCategories"}</label></td>
@@ -58,7 +64,7 @@
 				{include file="search/searchFilter.tpl" displayIf="activeFilter" filterName="indexTerms" filterValue=$indexTerms key="search.indexTermsLong"}
 			{/if}
 		</table>
-		<br/>
+		<br />
 		{if $hasEmptyFilters}
 			{capture assign="emptyFilters"}
 				<table class="data">
@@ -150,7 +156,7 @@
 						</a>
 					{/if}
 					{if $hasAccess}
-						{foreach from=$publishedArticle->getLocalizedGalleys() item=galley name=galleyList}
+						{foreach from=$publishedArticle->getGalleys() item=galley name=galleyList}
 							&nbsp;<a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a>
 						{/foreach}
 					{/if}

@@ -4,8 +4,8 @@
 <!--
   * locale/ro_RO/author.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the ro_RO (Limba Română) locale.
@@ -13,7 +13,7 @@
   *
   -->
 
-<locale name="ro_RO" full_name = "Romanian">
+<locale name="ro_RO" full_name="Limba Română">
 	<message key="author.submit">Propunere nouă</message>
 	<message key="author.track">Propuneri active</message>
 	<message key="author.competingInterests"><![CDATA[Conflict&nbsp;de interese <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">Politica&nbsp;CI</a>]]></message>

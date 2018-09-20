@@ -3,8 +3,8 @@
 /**
  * @file classes/manager/form/UserManagementForm.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class UserManagementForm
@@ -37,7 +37,7 @@ class UserManagementForm extends Form {
 			$this->addCheck(new FormValidatorCustom($this, 'username', 'required', 'user.register.form.usernameExists', array(DAORegistry::getDAO('UserDAO'), 'userExistsByUsername'), array($this->userId, true), true));
 			$this->addCheck(new FormValidatorAlphaNum($this, 'username', 'required', 'user.register.form.usernameAlphaNumeric'));
 
-			if (!Config::getVar('security', 'implicit_auth')) {
+			if (!Config::getVar('security', 'implicit_auth') || strtolower(Config::getVar('security', 'implicit_auth')) === IMPLICIT_AUTH_OPTIONAL) {
 				$this->addCheck(new FormValidator($this, 'password', 'required', 'user.profile.form.passwordRequired'));
 				$this->addCheck(new FormValidatorLength($this, 'password', 'required', 'user.register.form.passwordLengthTooShort', '>=', $site->getMinPasswordLength()));
 				$this->addCheck(new FormValidatorCustom($this, 'password', 'required', 'user.register.form.passwordsDoNotMatch', create_function('$password,$form', 'return $password == $form->getData(\'password2\');'), array(&$this)));
@@ -112,7 +112,7 @@ class UserManagementForm extends Form {
 		);
 
 		// Send implicitAuth setting down to template
-		$templateMgr->assign('implicitAuth', Config::getVar('security', 'implicit_auth'));
+		$templateMgr->assign('implicitAuth', strtolower(Config::getVar('security', 'implicit_auth')));
 
 		$site =& Request::getSite();
 		$templateMgr->assign('availableLocales', $site->getSupportedLocaleNames());
@@ -367,7 +367,7 @@ class UserManagementForm extends Form {
 				// Send welcome email to user
 				import('classes.mail.MailTemplate');
 				$mail = new MailTemplate('USER_REGISTER');
-				$mail->setReplyTo(null);
+				$mail->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 				$mail->assignParams(array('username' => $this->getData('username'), 'password' => $password, 'userFullName' => $user->getFullName()));
 				$mail->addRecipient($user->getEmail(), $user->getFullName());
 				$mail->send();

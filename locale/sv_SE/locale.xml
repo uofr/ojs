@@ -4,8 +4,8 @@
 <!--
   * locale/sv_SE/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings.
@@ -332,7 +332,7 @@ Observera att OAI-gränssnittet kan avaktiveras från sidan om man redigerar OJS
 <br /><br />
 <span class="formError">Varning: Om du ändrar de här inställningarna kan sidan bli oåtkomlig (i så fall måste konfigureringsfilerna repareras manuellt.). Ändra ingenting om du inte vet exakt vad
  du gör.</span>]]></message>
-	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>OBSERVERA!</div>
+	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>OBSERVERA!</h4>
 <p>Systemet kunde inte automatiskt skriva över konfiguationsfilen. För att spara dina ändringar, öppna <tt>config.inc.php</tt> i ett lämpligt textredigeringsprogram och ersätt innehållet med informationen i textfältet nedan.</p>]]></message>
 
 
@@ -407,7 +407,7 @@ Du behöver inte installera LOCKSS förrän publiceringen är i full gång. Inst
 <h4>1. Förslag på policy för tidskrifter som erbjuder Open Access</h4>
 Författare som publicerar i den här tidskriften accepterar följande villkor:
 <ol type="a">
-	<li>Authors retain copyright and grant the journal right of first publication with the work simultaneously licensed under a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
+	<li>Authors retain copyright and grant the journal right of first publication with the work simultaneously licensed under a <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
 	<li>Authors are able to enter into separate, additional contractual arrangements for the non-exclusive distribution of the journal's published version of the work (e.g., post it to an institutional repository or publish it in a book), with an acknowledgement of its initial publication in this journal.</li>
 	<li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">The Effect of Open Access</a>).</li>
 </ol>
@@ -415,7 +415,7 @@ Författare som publicerar i den här tidskriften accepterar följande villkor:
 <h4>Förslag på policy för tidskrifter som erbjuder 'försenad' Open Access</h4>
 Författare som publicerar i den här tidskriften accepterar följande villkor:
 <ol type="a">
-	<li>Authors retain copyright and grant the journal right of first publication, with the work [SPECIFY PERIOD OF TIME] after publication simultaneously licensed under a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
+	<li>Authors retain copyright and grant the journal right of first publication, with the work [SPECIFY PERIOD OF TIME] after publication simultaneously licensed under a <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
 	 <li>Authors are able to enter into separate, additional contractual arrangements for the non-exclusive distribution of the journal's published version of the work (e.g., post it to an institutional repository or publish it in a book), with an acknowledgement of its initial publication in this journal.</li>
 	 <li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html"> The Effect of Open Access</a>).</li>
 </ol>]]></message>
@@ -494,10 +494,10 @@ Du kan välja att ge användaren en förklaring till varför kontot har upphört
 	<!-- Navigation sidebar menu -->
 	
 	<!-- Used by editor in submission review / editing -->
-	<message key="editor.article.selectReviewerNotes"><![CDATA[Namnlänkar till granskarprofilen.<br/>
-Granskning sker på en skala från 1-5 där 5 är högsta betyg.<br/>
-Veckor visar på den genomsnittliga tiden det tar att granska ett manus.<br/>
-Senast visar datumet för den senast accepterade granskningen.<br/>
+	<message key="editor.article.selectReviewerNotes"><![CDATA[Namnlänkar till granskarprofilen.<br />
+Granskning sker på en skala från 1-5 där 5 är högsta betyg.<br />
+Veckor visar på den genomsnittliga tiden det tar att granska ett manus.<br />
+Senast visar datumet för den senast accepterade granskningen.<br />
 Aktiva visar antalet granskare som för tillfället arbetar med granskning.]]></message>
 
 
@@ -980,8 +980,8 @@ Din server stöttas för tillfället av mbstring: <strong>{$supportsMBString}</s
 
 	<!-- RT Searches -->
 
-	<message key="rt.admin.validateUrls.description"><![CDATA[Förmodat ogiltiga URL:er för söksidor visas nedan.<br/>
-Du bör verifiera de URL:er som är markerade som ogiltiga manuellt, eftersom urvalet inte kan garanteras till 100%.<br/>
+	<message key="rt.admin.validateUrls.description"><![CDATA[Förmodat ogiltiga URL:er för söksidor visas nedan.<br />
+Du bör verifiera de URL:er som är markerade som ogiltiga manuellt, eftersom urvalet inte kan garanteras till 100%.<br />
 Validering av URL:er kan misslyckas på sökningar som kräver inskickad data.]]></message>
 	
 	<!-- RT Entities -->

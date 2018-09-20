@@ -4,15 +4,15 @@
 <!--
   * locale/sv_SE/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2000-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2000-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the sv_SE (Svenska) locale.
   *
   -->
 
-<locale name="sv_SE" full_name = "Swedish">
+<locale name="sv_SE" full_name="Svenska">
 	<message key="manager.emails.confirmResetAll">Är du säker på att du vill återställa alla tidskriftens E-postmallar till ursprungligt utseende? Egna inställningar kommer att raderas</message>
 	<message key="manager.files.note">Observera: Filutforskaren är en funktion som gör det möjligt att ändra och visa en tidskrifts katalog och filer direkt.</message>
 	<message key="manager.groups">Redaktion</message>
@@ -26,7 +26,7 @@
 	<message key="manager.groups.noneCreated">Inget Redaktionslag har skapats.</message>
 	<message key="manager.journalManagement">Hantera tidskrift</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Ladda upp lokal-specifika standard-inställningar</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan översättas till flera olika språk och fungerar dessutom som ett flerspråkigt system där användaren kan växla mellan språk på de olika sidorna.<br /><br/> Om ett språk som stöds av OJS inte finns listad nedan, be huvudadministratören att installera språket. För instruktioner om hur man lägger till fler språk, vänligen se OJS-dokumentationen.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan översättas till flera olika språk och fungerar dessutom som ett flerspråkigt system där användaren kan växla mellan språk på de olika sidorna.<br /><br /> Om ett språk som stöds av OJS inte finns listad nedan, be huvudadministratören att installera språket. För instruktioner om hur man lägger till fler språk, vänligen se OJS-dokumentationen.]]></message>
 	<message key="manager.languages.noneAvailable">Tyvärr, det finns inga ytterligare språk tillgängliga. Kontakta huvudadministratören om du vill lägga till språk i den här tidskriften.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Detta blir standardspråket för tidskriftens hemsida.</message>
 	<message key="manager.managementPages">Administrationssidor</message>
@@ -140,7 +140,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Kommer att synas under "Om tidskriften")</message>
 	<message key="manager.setup.authorCopyrightNotice">Upphovsrättsskydd</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Författare måste acceptera avtal om upphovsrätt i samband med att manuskriptet skickas in.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Information om upphovsrättsskydd kommer att synas under "Om tidskriften" och i varje publicerat dokuments metadata. Det är upp till respektive tidskrift att avgöra de upphovsrättsliga avtalen mellan författare och tidskrift, the Public Knowledge Project rekommenderar att man använder <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a> licens. För detta infogas <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">sample Copyright Notice </a> Avtalet kan kopieras och klistras in i fältet nedan för tidskrifter som (a) är Open Access (b) 'Försenad' Open Access, eller (c) inte är Open Access.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Information om upphovsrättsskydd kommer att synas under "Om tidskriften" och i varje publicerat dokuments metadata. Det är upp till respektive tidskrift att avgöra de upphovsrättsliga avtalen mellan författare och tidskrift, the Public Knowledge Project rekommenderar att man använder <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licens. För detta infogas <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">sample Copyright Notice </a> Avtalet kan kopieras och klistras in i fältet nedan för tidskrifter som (a) är Open Access (b) 'Försenad' Open Access, eller (c) inte är Open Access.]]></message>
 	<message key="manager.setup.authorGuidelines">Författarinstruktioner</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Fastställ de bibliografiska riktlinjerna för författarnas manuskript. (ex., <i>Publication Manual of the American Psychological Association</i>, 5th edition, 2001). Gör också klart vilka typer av kompletterande filer författaren kan ladda upp för att öka förståelsen hos läsaren (ex.: rådata, forskningsinstrument, dokumentation etc.)]]></message>
 	<message key="manager.setup.competingInterests">Intressekonflikter</message>
@@ -193,7 +193,7 @@
 	<message key="manager.setup.enableAnnouncements">Möjliggör för tidskriftsansvariga att lägga till tillkännagivanden.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Visning</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">av tidskriftens senaste tillkännagivanden.</message>
-	<message key="manager.setup.enablePageNumber">Sidnumrering bestäms och förs in manuellt i Innehållsförteckningen (ex., pp. 13-26).</message>
+	<message key="manager.setup.enablePageNumber">Sidnumrering bestäms och förs in manuellt i Innehållsförteckningen (ex., 13-26).</message>
 	<message key="manager.setup.enablePublicArticleId">Anpassade identifierare används för att identifiera tidskriftens publicerade innehåll.</message>
 	<message key="manager.setup.enablePublicGalleyId">Anpassade identifierare används för att identifiera sidkorrektur (t ex HTML eller PDF filer) för publicerade enheter.</message>
 	<message key="manager.setup.enablePublicIssueId">Anpassade identifierare används för att identifiera tidskriftens nummer.</message>

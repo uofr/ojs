@@ -1,8 +1,8 @@
 {**
  * templates/sectionEditor/createReviewerForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form for editors to create reviewers.
@@ -96,7 +96,7 @@
 	<tr valign="top">
 		<td class="label">{fieldLabel name="affiliation" key="user.affiliation"}</td>
 		<td class="value">
-			<textarea name="affiliation[{$formLocale|escape}]" id="affiliation" rows="5" cols="40" class="textArea">{$affiliation[$formLocale]|escape}</textarea><br/>
+			<textarea name="affiliation[{$formLocale|escape}]" id="affiliation" rows="5" cols="40" class="textArea">{$affiliation[$formLocale]|escape}</textarea><br />
 			<span class="instruct">{translate key="user.affiliation.description"}</span>
 		</td>
 	</tr>

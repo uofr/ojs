@@ -3,8 +3,8 @@
 /**
  * @file plugins/paymethod/manual/ManualPaymentPlugin.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ManualPaymentPlugin
@@ -126,7 +126,7 @@ class ManualPaymentPlugin extends PaymethodPlugin {
 				$contactName = $journal->getSetting('contactName');
 				$contactEmail = $journal->getSetting('contactEmail');
 				$mail = new MailTemplate('MANUAL_PAYMENT_NOTIFICATION');
-				$mail->setReplyTo(null);
+				$mail->setFrom($contactEmail, $contactName);
 				$mail->addRecipient($contactEmail, $contactName);
 				$mail->assignParams(array(
 					'journalName' => $journal->getLocalizedTitle(),

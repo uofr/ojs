@@ -1,8 +1,8 @@
 {**
  * templates/payments/payMethodSettingsForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to edit payment settings.
@@ -45,7 +45,7 @@ function changePaymentMethod() {
 			{assign var=pluginIndex value=1}
 			<h4>{translate key="manager.payment.paymentMethods"}</h4>
 			{foreach from=$paymentMethodPlugins item=plugin}
-				&nbsp;<input type="radio" name="paymentMethodPluginName" id="paymentMethodPluginName-{$pluginIndex|escape}" value="{$plugin->getName()|escape}" onclick="changePaymentMethod();" {if $paymentMethodPluginName == $plugin->getName()}checked="checked" {/if}/>&nbsp;<label for="paymentMethodPluginName-{$pluginIndex|escape}">{$plugin->getDisplayName()|escape}</label><br/>
+				&nbsp;<input type="radio" name="paymentMethodPluginName" id="paymentMethodPluginName-{$pluginIndex|escape}" value="{$plugin->getName()|escape}" onclick="changePaymentMethod();" {if $paymentMethodPluginName == $plugin->getName()}checked="checked" {/if}/>&nbsp;<label for="paymentMethodPluginName-{$pluginIndex|escape}">{$plugin->getDisplayName()|escape}</label><br />
 				<p>{$plugin->getDescription()}</p>
 				{assign var=pluginIndex value=$pluginIndex+1}
 			{/foreach}

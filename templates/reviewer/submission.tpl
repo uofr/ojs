@@ -1,8 +1,8 @@
 {**
  * templates/reviewer/submission.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Show the reviewer administration page.
@@ -65,7 +65,7 @@ function confirmSubmissionCheck() {
 					({translate key="submission.review"})
 				{/if}
 			{/if}
-			<br/>
+			<br />
 {/foreach}
 {if $notFirstEditAssignment}
 		</td>
@@ -209,7 +209,7 @@ function confirmSubmissionCheck() {
 		<td>
 			{url|assign:"competingInterestGuidelinesUrl" page="information" op="competingInterestGuidelines"}
 			<span class="instruct">{translate key="reviewer.article.enterCompetingInterests" competingInterestGuidelinesUrl=$competingInterestGuidelinesUrl}</span>
-			{if not $confirmedStatus or $declined or $submission->getCancelled() or $submission->getRecommendation()}<br/>
+			{if not $confirmedStatus or $declined or $submission->getCancelled() or $submission->getRecommendation()}<br />
 				{$reviewAssignment->getCompetingInterests()|strip_unsafe_html|nl2br}
 			{else}
 				<form action="{url op="saveCompetingInterests" reviewId=$reviewId}" method="post">

@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/medra/classes/O4DOIExportDom.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class O4DOIExportDom
@@ -965,7 +965,7 @@ class O4DOIExportDom extends DOIExportDom {
 		}
 
 		// Extent (for article-as-manifestation only)
-		if (is_a($galley, 'ArticleGalley')) {
+		if (is_a($galley, 'ArticleGalley') && !$galley->getRemoteURL()) {
 			XMLCustomWriter::appendChild($contentItemElement, $this->_extentElement($galley));
 		}
 

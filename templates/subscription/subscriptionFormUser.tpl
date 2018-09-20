@@ -1,8 +1,8 @@
 {**
  * templates/subscription/subscriptionFormUser.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Common subscription fields
@@ -43,7 +43,7 @@
 <tr valign="top">
 	<td class="label">{fieldLabel name="userAffiliation" key="user.affiliation"}</td>
 	<td class="value">
-		<textarea name="userAffiliation[{$formLocale|escape}]" id="userAffiliation" rows="5" cols="40" class="textArea">{$userAffiliation[$formLocale]|escape}</textarea><br/>
+		<textarea name="userAffiliation[{$formLocale|escape}]" id="userAffiliation" rows="5" cols="40" class="textArea">{$userAffiliation[$formLocale]|escape}</textarea><br />
 		<span class="instruct">{translate key="user.affiliation.description"}</span>
 	</td>
 </tr>

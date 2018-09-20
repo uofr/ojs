@@ -3,8 +3,8 @@
 /**
  * @file classes/tasks/ReviewReminder.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ReviewReminder
@@ -48,7 +48,7 @@ class ReviewReminder extends ScheduledTask {
 
 		$email = new ArticleMailTemplate($article, $reviewerAccessKeysEnabled ? $reminderType . '_ONECLICK' : $reminderType, $journal->getPrimaryLocale(), false, $journal, false, true);
 		$email->setJournal($journal);
-		$email->setReplyTo(null);
+		$email->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 		$email->addRecipient($reviewer->getEmail(), $reviewer->getFullName());
 		$email->setSubject($email->getSubject($journal->getPrimaryLocale()));
 		$email->setBody($email->getBody($journal->getPrimaryLocale()));

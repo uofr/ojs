@@ -1,8 +1,8 @@
 {**
  * templates/editor/notifyUsers.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Editor's "Notify Users" email template form
@@ -39,7 +39,7 @@
 
 {if $notFirstMessage}
 	</ul>
-	<br/>
+	<br />
 {/if}
 
 <div id="recipients">
@@ -94,7 +94,7 @@
 </table>
 </div>{* recipients *}
 
-<br/>
+<br />
 
 <div id="issue">
 <h3>{translate key="issue.issue"}</h3>
@@ -115,7 +115,7 @@
 </table>
 </div>
 
-<br/>
+<br />
 
 
 <table id="email" class="data" width="100%">

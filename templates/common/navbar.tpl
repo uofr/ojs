@@ -1,8 +1,8 @@
 {**
  * templates/common/navbar.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Navigation Bar
@@ -14,7 +14,7 @@
 		<li id="about"><a href="{url page="about"}">{translate key="navigation.about"}</a></li>
 
 		{if $isUserLoggedIn}
-			<li id="userHome"><a href="{url journal="index" page="user"}">{translate key="navigation.userHome"}</a></li>
+			<li id="userHome"><a href="{if $hasOtherJournals}{url journal="index" page="user"}{else}{url page="user"}{/if}">{translate key="navigation.userHome"}</a></li>
 		{else}
 			<li id="login"><a href="{url page="login"}">{translate key="navigation.login"}</a></li>
 			{if !$hideRegisterLink}

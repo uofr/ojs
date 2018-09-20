@@ -3,11 +3,11 @@
 <!--
   * locale/ca_ES/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
   *
   * Localization strings.
   -->
@@ -211,7 +211,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Apareixerà a «Sobre la revista») </message>
 	<message key="manager.setup.authorCopyrightNotice">Avís de drets d'autor/a</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Demana als autors/ores que acceptin l’avís de drets d'autor/a com a part del procediment de la tramesa.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Aquest avís de drets d'autor/a apareixerà a la pàgina «Sobre la revista» i a les metadades de tots els elements publicats. Si bé la revista és l’encarregada de determinar els termes de l’acord de drets d'autor/a amb els autors/ores, el Public Knowledge Project recomana utilitzar la llicència <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a>. Amb aquesta finalitat, es proporciona <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">un redactat d’exemple per a l'avís de drets d'autor/a</a> que podeu copiar a continuació per a les revistes que (i) ofereixen accés lliure, (ii) ofereixen accés lliure diferit o (iii) no ofereixen accés lliure.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Aquest avís de drets d'autor/a apareixerà a la pàgina «Sobre la revista» i a les metadades de tots els elements publicats. Si bé la revista és l’encarregada de determinar els termes de l’acord de drets d'autor/a amb els autors/ores, el Public Knowledge Project recomana utilitzar la llicència <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Amb aquesta finalitat, es proporciona <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">un redactat d’exemple per a l'avís de drets d'autor/a</a> que podeu copiar a continuació per a les revistes que (i) ofereixen accés lliure, (ii) ofereixen accés lliure diferit o (iii) no ofereixen accés lliure.]]></message>
 	<message key="manager.setup.authorGuidelines">Directrius per a l’autor/a</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Indiqueu als autors/ores les normes bibliogràfiques i de formatació que s’utilitzen per als elements tramesos a la revista (p. ex. <em>Publication Manual of the American Psychological Association</em>, 5a edició, 2001). Sovint resulta útil indicar exemples dels formats de citació de revistes i llibres que s’utilitzen més habitualment a les trameses. També podeu identificar els tipus de fitxers addicionals (com ara conjunts de dades, instruments de recerca, etc.) que es recomana als autors/ores de carregar, juntament amb les trameses, amb l’objectiu de potenciar el compromís dels lectors/ores amb la seva obra.]]></message>
 	<message key="manager.setup.competingInterests">Conflicte d’interessos</message>
@@ -513,7 +513,6 @@
 	<message key="manager.statistics.reports.objectType">Tipus d'objecte</message>
 	<message key="manager.statistics.reports.objectId">Id. de l'objecte</message>
 	<message key="manager.statistics.reports.objectId.label">Indiqueu la identificació d'un o més objectes, separats per una coma (p. ex. 1,2,3,4,5).</message>
-	<message key="manager.statistics.reports.today">Avui</message>
 	<message key="manager.statistics.reports.currentMonth">Mes actual</message>
 	<message key="manager.statistics.reports.orderBy">Ordena per</message>
 	<message key="manager.statistics.reports.orderDir">Direcció</message>
@@ -735,4 +734,11 @@
 	<message key="manager.setup.confirmResetLicense">Estàs segur de voler reiniciar la llicència i la informació del copyright adjunta al contingut publicat i substituir-la per la llicència actual de la revista?</message>
 	<message key="manager.subscriptions.form.dateRemindedBefore">S'ha enviat el recordatori pre-venciment</message>
 	<message key="manager.subscriptions.form.dateRemindedAfter">S'ha enviat el recordatori post-venciment</message>
+	<message key="manager.setup.confirmResetLicenseChanged">Heu canviat la informació de llicència i drets d'autor a la configuració de la revista. Guardeu aquests canvis abans de restablir els permisos.</message>
+	<message key="manager.setup.emailHeader">Capçalera del correu</message>
+	<message key="manager.setup.emailHeaderDescription">Els correus electrònics preestablerts que el sistema envia en nom de la revista començaran amb la següent capçalera. El remitent d'aquests correus serà el contacte principal, per la qual cosa és important aclarir que el contacte principal no és necessàriament el responsable del contingut dels missatges, que poden haver estat enviats en nom d'un usuari diferent.</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Els elements en cursiva i amb el símbol * representen dades opcionals per a l'actual sistema de càlcul d'estadístiques en l'OJS (tipus mètric). És possible que tingueu dades o no, depenent de la configuració del vostre mòdul d'estadístiques.</message>
+	<message key="manager.statistics.reports.yesterday">Ahir</message>
+	<message key="manager.setup.copyrightYearBasis.Article">L'any per defecte s'extraurà de la data de publicació de l'article, com es fa en publicar de manera immediata.</message>
+	<message key="manager.setup.copyrightYearBasis.Issue">L'any per defecte s'extraurà de la data de publicació del número.</message>
 </locale>

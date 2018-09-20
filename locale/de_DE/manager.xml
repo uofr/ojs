@@ -4,8 +4,8 @@
 <!--
   * locale/de_DE/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization strings for the de_DE (Deutsch (Deutschland)) locale.
   * Please contact Marco Tullney, marco.tullney@fu-berlin.de, with any questions regarding this translation.
@@ -210,7 +210,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Erscheint unter "Über uns") </message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Autor/innen müssen im Einreichungsverfahren der Lizenz zustimmen.</message>
 	<message key="manager.setup.authorCopyrightNotice">Copyright-Vermerk</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Der hier angegebene Copyright-Vermerk erscheint in der "Über uns"-Sektion. Er sollte Leser/innen und Autor/innen mitteilen, wer über die Rechte verfügt: Autor/in, Zeitschrift oder eine dritte Partei. Er sollte zusätzliche Lizenzhinweise enthalten (z.B. <a href="http://creativecommons.org" target="_new" class="action">Creative-Commons</a>-Lizenzen), die Leser/innen Rechte einräumen (vgl. <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">Beispiele</a>), und er sollte, falls notwendig, Wege benennen, um weitere Nutzungsrechte für die Zeitschrifteninhalte zu erhalten.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Der hier angegebene Copyright-Vermerk erscheint in der "Über uns"-Sektion. Er sollte Leser/innen und Autor/innen mitteilen, wer über die Rechte verfügt: Autor/in, Zeitschrift oder eine dritte Partei. Er sollte zusätzliche Lizenzhinweise enthalten (z.B. <a href="https://creativecommons.org" target="_new" class="action">Creative-Commons</a>-Lizenzen), die Leser/innen Rechte einräumen (vgl. <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">Beispiele</a>), und er sollte, falls notwendig, Wege benennen, um weitere Nutzungsrechte für die Zeitschrifteninhalte zu erhalten.]]></message>
 	<message key="manager.setup.authorGuidelines">Richtlinien für Autor/innen</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Bibliografische und Formatstandards für die Autor/innen (z.B. <em>Publication Manual of the American Psychological Association</em>, 5. Auflage 2001). Beispiele der wichtigsten Zitationsstandards für Zeitschriften und Bücher sind oft eine Hilfe. Ebenso Angaben zu infrage kommenden Zusatzdateien (z.B. Datensätze, Forschungsinstrumente, Grafiken usw.), die Autor/innen zu ihren Beiträgen hochladen sollten, wenn das Interesse der Leser/innen auf diese Weise gefördert wird.]]></message>
 	<message key="manager.setup.competingInterests">Interessenkonflikte</message>
@@ -271,14 +271,12 @@
 	<message key="manager.setup.emailBounceAddressDescription">Jede E-Mail, die nicht zugestellt werden kann, erzeugt eine Fehlermeldung, die an diese Adresse geschickt wird.</message>
 	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Anmerkung:</strong> Die Website-Administrator/in muss in der OJS-Konfigurationsdatei die Option <tt>allow_envelope_sender</tt> aktivieren, um dies zu ermöglichen. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
 	<message key="manager.setup.emails">E-Mail-Kennzeichnung </message>
-	<message key="manager.setup.emailHeader">E-Mail-Header</message>
-	<message key="manager.setup.emailHeaderDescription">Die vorbereiteten E-Mails, die vom System im Namen der Zeitschrift verschickt werden, beginnen mit dem folgenden Header. Diese E-Mails werden von der Adresse des Hauptkontakts aus verschickt, deshalb ist es wichtig klarzustellen, dass dieser nicht unbedingt für den Inhalt der E-Mail verantwortlich ist, die durch eine/n andere Benutzer/in verschickt worden sein könnte.</message>
 	<message key="manager.setup.emailSignatureDescription">Alle E-Mail-Vorlagen, die vom System im Namen der Zeitschrift verschickt werden, tragen die folgende Signatur. Die E-Mail-Vorlagen können unter "Zeitschriftenverwaltung" bearbeitet werden.</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.enableAnnouncements">Erlauben Sie den Zeitschriftenverwalter/innen, Mitteilungen hinzuzufügen.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Anzeige der</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">neuesten Mitteilungen auf der Startseite der Zeitschrift</message>
-	<message key="manager.setup.enablePageNumber">Für jeden Beitrag werden Seitenzahlen berechnet und manuell im Inhaltsverzeichnis der Zeitschrift eingetragen (z.B. S. 13-26).</message>
+	<message key="manager.setup.enablePageNumber">Für jeden Beitrag werden Seitenzahlen berechnet und manuell im Inhaltsverzeichnis der Zeitschrift eingetragen (z.B. 13-26).</message>
 	<message key="manager.setup.enablePublicArticleId">Eindeutige Kennungen werden für Artikel verwendet.</message>
 	<message key="manager.setup.enablePublicGalleyId">Eindeutige Kennungen werden für Fahnen (z.B. HTML- oder PDF-Dateien) zu Artikeln verwendet.</message>
 	<message key="manager.setup.enablePublicIssueId">Eindeutige Kennungen werden für Ausgaben verwendet.</message>
@@ -510,14 +508,15 @@
 	</message>
 	<message key="manager.statistics.reports">Berichterstellung</message>
 	<message key="manager.statistics.reports.aggregationColumns">Erzeuge Statistiken nach:</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Elemente, die kursiv gesetzt und mit * markiert sind, stehen für optionale Daten fürdie momentane Statistikmethode in OJS sind (gewählte Metrik). Abhängig von Ihrer Konfiguration des Statistik-Plug-Ins haben Sie diese Daten oder nicht.</message>
 	<message key="manager.statistics.reports.defaultReportTemplates">Standard-Berichtsvorlagen</message>
 	<message key="manager.statistics.reports.defaultReport.articleDownloads">Downloads von Artikeldateien</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstract">Aufrufe der Abstractseiten von Artikeln</message>
-	<message key="manager.statistics.reports.defaultReport.articleAbstractAndDownloads">Article Abstracts und Downloads</message>
+	<message key="manager.statistics.reports.defaultReport.articleAbstractAndDownloads">Abstractseiten und Downloads</message>
 	<message key="manager.statistics.reports.defaultReport.issueDownloads">Downloads von Ausgabendateien</message>
-	<message key="manager.statistics.reports.defaultReport.issueTableOfContents">Issue Aufrufe der Inhaltsverzeichnis-Seiten</message>
-	<message key="manager.statistics.reports.defaultReport.issueTableOfContentsAndDownloads">Issue table of contents and downloads</message>
-	<message key="manager.statistics.reports.defaultReport.journalIndexPageViews">Journal Startseiten-Aufrufe</message>
+	<message key="manager.statistics.reports.defaultReport.issueTableOfContents">Aufrufe der Inhaltsverzeichnis-Seiten</message>
+	<message key="manager.statistics.reports.defaultReport.issueTableOfContentsAndDownloads">Inhaltsverzeichnisse und Downloads</message>
+	<message key="manager.statistics.reports.defaultReport.journalIndexPageViews">Startseiten-Aufrufe</message>
 	<message key="manager.statistics.reports.description">OJS erstellt Berichte, die die Details der Verarbeitung von Beiträgen aus der Perspektive von Beiträgen, Redakteur/innen, Gutachter/innen sowie Rubriken über einen festgelegten Zeitraum nachzeichnen. Die Berichte werden im CSV-Format erstellt, die mit einer Tabellenkalkulation betrachtet werden können.</message>
 	<message key="manager.statistics.reports.generateReport">Benutzerdefinierten Bericht erzeugen</message>
 	<message key="manager.statistics.reports.advancedOptions">Erweiterte Einstellungen</message>
@@ -529,7 +528,7 @@
 	<message key="manager.statistics.reports.objectType">Objekttyp</message>
 	<message key="manager.statistics.reports.objectId">Objekt-ID</message>
 	<message key="manager.statistics.reports.objectId.label">Definieren Sie eine oder mehrere Objekt-ID, jeweils mit Komma getrennt (z.B. 1,2,3,4,5).</message>
-	<message key="manager.statistics.reports.today">Heute</message>
+	<message key="manager.statistics.reports.yesterday">Gestern</message>
 	<message key="manager.statistics.reports.currentMonth">Aktueller Monat</message>
 	<message key="manager.statistics.reports.orderBy">Sortieren nach</message>
 	<message key="manager.statistics.reports.orderDir">Richtung</message>
@@ -739,7 +738,7 @@
 	<message key="manager.subscriptionTypes.noneCreated">Es wurden keine neuen Abonnementtypen erstellt.</message>
 	<message key="manager.subscriptionTypes.subscriptionTypeCreatedSuccessfully">Abonnementtyp erfolgreich erstellt.</message>
 
-	<!-- Kategorien -->
+	<!-- Categories -->
 	<message key="manager.setup.categories">Kategorien</message>
 	<message key="manager.setup.categories.description">Wählen Sie die passendsten Kategorien aus der oben angezeigten Menge. Leser/innen können die gesamte Zeitschriftenmenge dann nach Kategorien durchsehen.</message>
 </locale>

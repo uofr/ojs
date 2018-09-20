@@ -4,8 +4,8 @@
 <!--
   * locale/ro_RO/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the ro_RO (Limba Română) locale.
@@ -13,7 +13,7 @@
   *
   -->
 
-<locale name="ro_RO" full_name = "Romanian">
+<locale name="ro_RO" full_name="Limba Română">
 	<message key="manager.emails.confirmResetAll">Eşti sigur că doreşti să resetezi toate şabloanele pentru emailurile revistei? Veţi pierde toate adaptările făcute.</message>
 	<message key="manager.files.note">Notă: Browserul de fişiere este o funcţionalitate avansată care permite ca fişierele şi directoarele asociate cu o revistă să fie văzute şi manipulate în mod direct.</message>
 	<message key="manager.groups">Caseta editorială</message>
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Formulare</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Va avea ca efect înlocuirea oricăror setări specifice unei localizări pe care le-ai avut cât timp ai utilizat respectiva localizare</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Reîncarcă setările implicite specifice localizării</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS poate fi utilizat în mai multe limbi implementate în pachete de localizare. De asemenea, OJS poate opera  ca şi sistem multilingv, oferindu-le  utilizatorilor posibilitatea să aleagă limba dorită pentru oricare dintre pagini, fiind permis ca anumite date să fie întroduse în câteva limbi suplimentare.<br /><br/>Dacă o limbă suportată de OJS nu este menţionată mai jos, cereţi administratorului să instaleze limba din interfaţa de administrare a siteului. Pentru instrucţiuni privind adăugarea suportului pentru noi limbi, te rog consultă documentaţia OJS.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS poate fi utilizat în mai multe limbi implementate în pachete de localizare. De asemenea, OJS poate opera  ca şi sistem multilingv, oferindu-le  utilizatorilor posibilitatea să aleagă limba dorită pentru oricare dintre pagini, fiind permis ca anumite date să fie întroduse în câteva limbi suplimentare.<br /><br />Dacă o limbă suportată de OJS nu este menţionată mai jos, cereţi administratorului să instaleze limba din interfaţa de administrare a siteului. Pentru instrucţiuni privind adăugarea suportului pentru noi limbi, te rog consultă documentaţia OJS.]]></message>
 	<message key="manager.languages.noneAvailable">Scuze, nu sunt disponibile limbi suplimentare. Contactaţi administratorul siteului dacă doreşti să foloseşti limbi suplimentare pentru această revistă.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Aceasta va fi limba aleasă implicit pentru siteul revistei.</message>
 	<message key="manager.managementPages">Pagini pentru management</message>
@@ -197,7 +197,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Trebuie să apară în secţiunea „despre revistă”) </message>
 	<message key="manager.setup.authorCopyrightNotice">Notă privind drepturile de autor</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Solicitați autorilor să aprobe nota privind drepturile de autor ca parte a procesului de depunere a propunerii.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Notificarea privind drepturile de autor introdusă mai jos va apărea în secţiunea „despre revistă” şi în metadatele fiecărui articol publicat. Ţine de fiecare revistă să-şi determine natura condiţiilor stipulate prin drepturile de autor, dar Public Knowledge Project recomandă utilizarea licenţelor <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a>. În acest sens sunt formulate <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemple de note privind drepturile de autor</a> care nu pot fi copiate în spaţiul de mai jos pentru revistele care a) oferă acces deschis sau b) oferă acces deschis cu embargo sau care c) nu oferă acces deschis.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Notificarea privind drepturile de autor introdusă mai jos va apărea în secţiunea „despre revistă” şi în metadatele fiecărui articol publicat. Ţine de fiecare revistă să-şi determine natura condiţiilor stipulate prin drepturile de autor, dar Public Knowledge Project recomandă utilizarea licenţelor <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. În acest sens sunt formulate <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemple de note privind drepturile de autor</a> care nu pot fi copiate în spaţiul de mai jos pentru revistele care a) oferă acces deschis sau b) oferă acces deschis cu embargo sau care c) nu oferă acces deschis.]]></message>
 	<message key="manager.setup.authorGuidelines">Îndrumări pentru autori</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Menționează standardele bibliografice pentru autori şi standardele de redactare şi formatare utilizate pentru articolele propuse revistei (ex. <em>Publication Manual of the American Psychological Association</em>, a V-a ediţie, 2001). Este de mare ajutor, să oferi exemple de referinţe bibliografice pentru seriale şi cărţi care ar putea fi folosite la elaborarea propunerilor. De asemenea, identificarea tipurilor de fişiere adiţionale (ex. seturi de date, instrumente de cercetare, etc.) pe care autorii ar trebui să fie încurajaţi să le încarce suplimentar propunerii pentru a mări implicarea cititorilor în lucrarea respectivă.]]></message>
 	<message key="manager.setup.competingInterests">Conflictul de interese</message>

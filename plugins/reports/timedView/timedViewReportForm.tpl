@@ -1,8 +1,8 @@
 {**
  * plugins/generic/timedView/timedViewReportForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to select dates for a timed view report
@@ -10,10 +10,10 @@
 {assign var="pageTitle" value="plugins.reports.timedView.displayName"}
 {include file="common/header.tpl"}
 
-<br/>
+<br />
 {translate key="plugins.reports.timedView.form.largeSetOfDataIssue"}
-<br/>
-<br/>
+<br />
+<br />
 
 <form method="post" action="{url path='TimedViewReportPlugin'}">
 	{include file="common/formErrors.tpl"}

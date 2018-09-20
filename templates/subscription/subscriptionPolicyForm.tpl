@@ -1,8 +1,8 @@
 {**
  * templates/subscription/subscriptionPolicyForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Setup subscription policies.
@@ -24,7 +24,7 @@
 </ul>
 
 {if $subscriptionPoliciesSaved}
-<br/>
+<br />
 {translate key="manager.subscriptionPolicies.subscriptionPoliciesSaved"}<br />
 {/if}
 
@@ -150,7 +150,7 @@
 </p>
 
 {if !$scheduledTasksEnabled}
-	<br/>
+	<br />
 	{translate key="manager.subscriptionPolicies.expiryRemindersDisabled"}
 {/if}
 </div>
@@ -204,7 +204,7 @@
 	<input type="checkbox" name="enableOpenAccessNotification" id="enableOpenAccessNotification" value="1"{if !$scheduledTasksEnabled} disabled="disabled" {elseif $enableOpenAccessNotification} checked="checked"{/if} />&nbsp;
 	{fieldLabel name="enableOpenAccessNotification" key="manager.subscriptionPolicies.openAccessNotificationDescription"}
 	{if !$scheduledTasksEnabled}
-		<br/>
+		<br />
 		{translate key="manager.subscriptionPolicies.openAccessNotificationDisabled"}
 	{/if}
 	</p>

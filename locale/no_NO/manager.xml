@@ -4,15 +4,15 @@
 <!--
   * locale/no_NO/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the no_NO (Norsk) locale.
   *
   -->
 
-<locale name="no_NO" full_name = "Norwegian">
+<locale name="no_NO" full_name="Norsk">
 	<message key="manager.emails.confirmResetAll">Er du sikker på at du vil tilbakestille alle e-postmaler i dette tidsskriftet? Du vil miste alle tilpasninger du har gjort.</message>
 	<message key="manager.files.note">NB: Filutforskeren er en avansert funksjon som gir mulighet til å manipulere filene og mappene til tidsskriftet direkte.</message>
 	<message key="manager.groups">Redaksjon</message>
@@ -22,7 +22,7 @@
 	<message key="manager.groups.enableBoard.description"><![CDATA[Til visning i <a href="{$aboutEditorialTeamUrl}">Redaksjon</a> i Om tidsskriftet:]]></message>
 	<message key="manager.groups.noneCreated">Ingen redaksjonelle stillinger er opprettet.</message>
 	<message key="manager.journalManagement">Tidsskriftadministrasjon</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan vises for brukere på alle språk OJS til enhver tid støtter. Dessuten kan OJS brukes som et delvis flerspråklig system, som gir brukere mulighet til å veksle mellom språk på hver side, og som tillater at visse data skrives inn på flere tilleggssspråk.<br /><br/>Hvis et språk som er støttet av OJS ikke er oppført på listen nedenfor, må du be nettstedsadministratoren din om å installere språket, gjennom grensesnittet for nettstedsadministrasjon. Hvordan støtte for nye språk skal legges til, er beskrevet i OJS-dokumentasjonen.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan vises for brukere på alle språk OJS til enhver tid støtter. Dessuten kan OJS brukes som et delvis flerspråklig system, som gir brukere mulighet til å veksle mellom språk på hver side, og som tillater at visse data skrives inn på flere tilleggssspråk.<br /><br />Hvis et språk som er støttet av OJS ikke er oppført på listen nedenfor, må du be nettstedsadministratoren din om å installere språket, gjennom grensesnittet for nettstedsadministrasjon. Hvordan støtte for nye språk skal legges til, er beskrevet i OJS-dokumentasjonen.]]></message>
 	<message key="manager.languages.noneAvailable">Beklager, ingen flere språk er tilgjengelig. Kontakt nettstedsadministratoren din hvis du ønsker å bruke flere språk i dette tidsskriftet.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Dette vil bli standard språk for tidsskriftets nettsted.</message>
 	<message key="manager.managementPages">Administrasjonssider</message>
@@ -119,7 +119,7 @@
 	<message key="manager.setup.enableAnnouncements">Tillat redaksjonsledere å legge til tidsskriftsoppslag.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Vis de</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">nyeste oppslagene på tidsskriftets hjemmeside.</message>
-	<message key="manager.setup.enablePageNumber">Sidetall for elementene vil bli regnet ut og skrevet inn manuelt i innholdsoversikten (for eks. pp. 13-26).</message>
+	<message key="manager.setup.enablePageNumber">Sidetall for elementene vil bli regnet ut og skrevet inn manuelt i innholdsoversikten (for eks. 13-26).</message>
 	<message key="manager.setup.enablePublicArticleId">Tilpassete identifikatorer vil bli brukt for å identifisere publisert elementer.</message>
 	<message key="manager.setup.enablePublicIssueId">Tilpassete identifikatorer vil bli brukt for å identifisere utgaver.</message>
 	<message key="manager.setup.enablePublicSuppFileId">Tilpassete identifikatorer vil bli brukt for å identifisere tilleggsfiler til artikler.</message>
@@ -626,7 +626,7 @@
 	<message key="manager.subscriptionTypes.form.options">Valgmuligheter</message>
 	<message key="manager.setup.historyDescription">Denne teksten vil vises i "Om"-avsnittet av tidsskriftets nettsted, og kan benyttes til å beskriver endringer i navn, redaksjon og annet som er relevant for tidsskriftets publiseringshistorie.</message>
 	<message key="manager.sections.wordCountInstructions">Begrens antall ord i abstrakt i denne delen av tidsskriftet til (0 betyr ingen begrensning):</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Opphavsrettserklæringen som legges inn nedenfor vil bli synlig i "om tidsskriftet" og i metadataene for hver publisert artikkel/tilsv. Selv om det det er opp til tidsskriftet å inngå opphavsrettsavtale med forfattere, anbefaler The Public Knowledge Project å bruke en <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a> lisens. For dette formål finnes det et <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">forslag til opphavsretterklæring</a> som kan klippes og limes inn nedenfor for tidsskrifter som (a) tilbyr open access, (b) tilbyr forsinket open access, eller (c) ikke tilbyr open access.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Opphavsrettserklæringen som legges inn nedenfor vil bli synlig i "om tidsskriftet" og i metadataene for hver publisert artikkel/tilsv. Selv om det det er opp til tidsskriftet å inngå opphavsrettsavtale med forfattere, anbefaler The Public Knowledge Project å bruke en <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> lisens. For dette formål finnes det et <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">forslag til opphavsretterklæring</a> som kan klippes og limes inn nedenfor for tidsskrifter som (a) tilbyr open access, (b) tilbyr forsinket open access, eller (c) ikke tilbyr open access.]]></message>
 	<message key="manager.setup.contributorNoteDescription">Denne teksten vil vises nedenfor «Andre støttespillere» ovenfor listen med støttespillernes navn/url under «Tidsskriftets sponsorer» på «Om»-siden.</message>
 	<message key="manager.setup.history">Tidsskriftets historie</message>
 	<message key="manager.setup.journalFavicon">Tidsskriftets favicon</message>

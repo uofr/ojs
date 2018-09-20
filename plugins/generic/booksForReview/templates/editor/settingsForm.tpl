@@ -1,8 +1,8 @@
 {**
  * @file plugins/generic/booksForReview/templates/editor/settingsForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Books for Review plugin settings
@@ -103,7 +103,7 @@
 </p>
 
 {if !$scheduledTasksEnabled}
-	<br/>
+	<br />
 	{translate key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"}
 {/if}
 </div>
@@ -129,7 +129,7 @@
 </table>
 </div>
 
-<br/>
+<br />
 
 <input type="submit" name="save" class="button defaultButton" value="{translate key="common.save"}"/>&nbsp;<input type="button" class="button" value="{translate key="common.cancel"}" onclick="history.go(-1)"/>
 </form>

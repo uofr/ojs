@@ -4,15 +4,15 @@
 <!--
   * locale/fr_FR/editor.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the fr_FR (Français (France)) locale.
   *
   -->
 
-<locale name="fr_FR" full_name = "Français">
+<locale name="fr_FR" full_name="Français (France)">
 	<message key="editor.article.reviewForms">Formulaires d'évaluation</message>
 	<message key="editor.article.selectReviewForm">Sélectionner un formulaire d'évaluation</message>
 	<message key="editor.article.clearReviewForm">Réinitialiser le formulaire d'évaluation</message>

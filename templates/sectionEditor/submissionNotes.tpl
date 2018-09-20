@@ -1,8 +1,8 @@
 {**
  * templates/sectionEditor/submissionNotes.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Show submission notes page.
@@ -115,7 +115,7 @@
 		<td class="value"><input type="file" name="upload" class="uploadField" /></td>
 	</tr>
 	</table>
-	<br/>
+	<br />
 	<input type="submit" class="button defaultButton" value="{translate key="submission.notes.createNewNote"}" />
 	</form>
 {else}

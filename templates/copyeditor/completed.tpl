@@ -1,8 +1,8 @@
 {**
  * templates/copyeditor/completed.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Show copyeditor's submission archive.
@@ -42,7 +42,7 @@ function sortSearch(heading, direction) {
 		<option value="startsWith"{if $searchMatch == 'startsWith'} selected="selected"{/if}>{translate key="form.startsWith"}</option>
 	</select>
 	<input type="text" size="15" name="search" class="textField" value="{$search|escape}" />
-	<br/>
+	<br />
 	<select name="dateSearchField" size="1" class="selectMenu">
 		{html_options_translate options=$dateFieldOptions selected=$dateSearchField}
 	</select>
@@ -53,7 +53,7 @@ function sortSearch(heading, direction) {
 	<input type="hidden" name="dateToHour" value="23" />
 	<input type="hidden" name="dateToMinute" value="59" />
 	<input type="hidden" name="dateToSecond" value="59" />
-	<br/>
+	<br />
 	<input type="submit" value="{translate key="common.search"}" class="button" />
 </form>
 &nbsp;

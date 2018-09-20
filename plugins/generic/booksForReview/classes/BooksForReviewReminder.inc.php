@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/booksForReview/classes/BooksForReviewReminder.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class BooksForReviewReminder
@@ -48,7 +48,7 @@ class BooksForReviewReminder extends ScheduledTask {
 		import('classes.mail.MailTemplate');
 		$mail = new MailTemplate($emailKey);
 
-		$mail->setReplyTo($book->getEditorEmail(), $book->getEditorFullName());
+		$mail->setFrom($book->getEditorEmail(), $book->getEditorFullName());
 		$mail->addRecipient($book->getUserEmail(), $book->getUserFullName());
 		$mail->setSubject($mail->getSubject($journal->getPrimaryLocale()));
 		$mail->setBody($mail->getBody($journal->getPrimaryLocale()));

@@ -1,8 +1,8 @@
 {**
  * templates/rtadmin/contexts.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RTAdmin context list
@@ -60,9 +60,9 @@ $(document).ready(function() { setupTableDND("#dragTable",
 		</tr>
 	{/if}
 	</table>
-<br/>
+<br />
 
-<a href="{url op="createContext" path=$version->getVersionId()}" class="action">{translate key="rt.admin.contexts.createContext"}</a><br/>
+<a href="{url op="createContext" path=$version->getVersionId()}" class="action">{translate key="rt.admin.contexts.createContext"}</a><br />
 </div>
 
 {include file="common/footer.tpl"}

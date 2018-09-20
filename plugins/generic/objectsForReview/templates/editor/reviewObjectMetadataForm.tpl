@@ -1,8 +1,8 @@
 {**
  * @file plugins/generic/objectsForReview/templates/editor/reviewObjectMetadataForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form to create/modify a review object metadata.
@@ -32,7 +32,7 @@ function togglePossibleOptions(newValue, multipleOptionsTypesString) {
 {/literal}
 </script>
 
-<br/>
+<br />
 <form id="reviewObjectMetadataForm" method="post" action="{url op="updateReviewObjectMetadata" anchor="possibleOptions"}">
 <input type="hidden" name="reviewObjectTypeId" value="{$reviewObjectTypeId|escape}"/>
 <input type="hidden" name="metadataId" value="{$metadataId|escape}"/>
@@ -98,7 +98,7 @@ function togglePossibleOptions(newValue, multipleOptionsTypesString) {
 		{if $notFirstOptionItem}
 				</table>
 		{/if}
-		<br/>
+		<br />
 		<input type="submit" name="addOption" value="{translate key="plugins.generic.objectsForReview.editor.objectMetadata.addOptionItem"}" class="button" {if not in_array($metadataType, $multipleOptionsTypes)}disabled="disabled"{/if}/>
 	</td>
 </tr>

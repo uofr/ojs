@@ -1,8 +1,8 @@
 {**
  * plugins/generic/thesis/studentThesisForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form for student thesis abstract submission.
@@ -15,8 +15,8 @@
 
 <div id="description">{translate key="plugins.generic.thesis.form.introduction"}</div>
 
-<br/>
-<br/>
+<br />
+<br />
 
 <form method="post" action="{url op="save"}">
 

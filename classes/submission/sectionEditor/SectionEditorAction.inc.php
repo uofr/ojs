@@ -3,8 +3,8 @@
 /**
  * @file classes/submission/sectionEditor/SectionEditorAction.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SectionEditorAction
@@ -442,7 +442,12 @@ class SectionEditorAction extends Action {
 				);
 				$email->assignParams($paramArray);
 
+			} else if ($preventAddressChanges) {
+				// If bouncing back e.g. from adding an attachment, the recipient list will
+				// appear empty unless we add this. Informational only.
+				$email->addRecipient($reviewer->getEmail(), $reviewer->getFullName());
 			}
+
 			$email->displayEditForm(
 				$request->url(null, null, 'remindReviewer', 'send'),
 				array(
@@ -1435,7 +1440,7 @@ class SectionEditorAction extends Action {
 
 		// Add log
 		import('classes.article.log.ArticleLog');
-		ArticleLog::logEvent($request, $sectionEditorSubmission, ARTICLE_LOG_EDITOR_ARCHIVE, 'log.editor.archived');
+		ArticleLog::logEvent($request, $sectionEditorSubmission, ARTICLE_LOG_EDITOR_ARCHIVE, 'log.editor.archived', array('articleId' => $sectionEditorSubmission->getId()));
 	}
 
 	/**
@@ -2026,7 +2031,7 @@ class SectionEditorAction extends Action {
 
 			if ($decisionConst == SUBMISSION_EDITOR_DECISION_DECLINE) {
 				// If the most recent decision was a decline,
-				// sending this email archives the submission.
+				// archive the submission.
 				$sectionEditorSubmission->setStatus(STATUS_ARCHIVED);
 				$sectionEditorSubmission->stampStatusModified();
 				$sectionEditorSubmissionDao->updateSectionEditorSubmission($sectionEditorSubmission);

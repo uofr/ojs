@@ -3,8 +3,8 @@
 /**
  * @file classes/search/ArticleSearch.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ArticleSearch
@@ -26,6 +26,7 @@ define('ARTICLE_SEARCH_TYPE',			0x00000020);
 define('ARTICLE_SEARCH_COVERAGE',		0x00000040);
 define('ARTICLE_SEARCH_GALLEY_FILE',		0x00000080);
 define('ARTICLE_SEARCH_SUPPLEMENTARY_FILE',	0x00000100);
+define('ARTICLE_SEARCH_SUPPLEMENTARY_FILE_METADATA',	0x00000300);
 define('ARTICLE_SEARCH_INDEX_TERMS',		0x00000078);
 
 define('ARTICLE_SEARCH_DEFAULT_RESULT_LIMIT', 20);
@@ -473,6 +474,7 @@ class ArticleSearch {
 			ARTICLE_SEARCH_ABSTRACT => 'abstract',
 			ARTICLE_SEARCH_GALLEY_FILE => 'galleyFullText',
 			ARTICLE_SEARCH_SUPPLEMENTARY_FILE => 'suppFiles',
+			ARTICLE_SEARCH_SUPPLEMENTARY_FILE_METADATA => 'suppFiles',
 			ARTICLE_SEARCH_DISCIPLINE => 'discipline',
 			ARTICLE_SEARCH_SUBJECT => 'subject',
 			ARTICLE_SEARCH_TYPE => 'type',

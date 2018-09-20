@@ -4,8 +4,8 @@
 <!--
   * plugins/generic/sword/locale/ar_IQ/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings
@@ -26,9 +26,9 @@
 	<message key="plugins.generic.sword.depositPoints.type.optionalFixed">إختيارية؛ ثابتة</message>
 	<message key="plugins.generic.sword.depositPoints.type.manager">رئيس التحرير حصراً</message>
 	<message key="plugins.generic.sword.depositPoints.type.description"><![CDATA[<h4>أنواع نقاط الإيداع:</h4>
-<p><strong>تلقائية</strong>: يحدث الإيداع بشكل آلي. يتم تحديد نقطة الإيداع الكاملة لـ SWORD. ينبغي هنا تحديد اسم الدخول وكلمة المرور. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br/>
-<strong>إختيارية؛ مرنة</strong>: يمكن للمؤلف التخير بين الإيداع من عدمه. رابط الإنترنت المحدد يشير إلى وثيقة خدمة، ويمكن للمؤلف إختيار أي من نقاط الإيداع المحددة لاستعمالها من تلك الوثيقة. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br/>
-<strong>إختيارية؛ ثابتة</strong>: يمكن للمؤلف التخير بين الإيداع من عدمه. رابط الإنترنت يحدد نقطة إيداع SWORD. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br/>
+<p><strong>تلقائية</strong>: يحدث الإيداع بشكل آلي. يتم تحديد نقطة الإيداع الكاملة لـ SWORD. ينبغي هنا تحديد اسم الدخول وكلمة المرور. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br />
+<strong>إختيارية؛ مرنة</strong>: يمكن للمؤلف التخير بين الإيداع من عدمه. رابط الإنترنت المحدد يشير إلى وثيقة خدمة، ويمكن للمؤلف إختيار أي من نقاط الإيداع المحددة لاستعمالها من تلك الوثيقة. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br />
+<strong>إختيارية؛ ثابتة</strong>: يمكن للمؤلف التخير بين الإيداع من عدمه. رابط الإنترنت يحدد نقطة إيداع SWORD. يحصل الإيداع بعد إشعار المؤلف بالقبول.<br />
 <strong>رئيس التحرير حصراً</strong>: لرئيس تحرير المجلة حصراً حق استعمال نقطة الإيداع هذه. رابط الإنترنت يحدد وثيقة الخدمة. يحصل الإيداع يدوياً من قبل رئيس التحرير عبر استعماله لواجهة الاستيراد/التصدير في صفحة إدارة المجلة.
 </p>]]></message>
 	<message key="plugins.generic.sword.depositPoints.password.description">إن لم تحدد كلمة المرور هنا، ستتم مطالبتك و/أو المؤلف بتقديمها عند حصول الإيداع. لاحظ أن تلك الكلمة ستكون مرئية لكل مدراء المجلة وستم حفظها بشكل صريح (غير مشفر) في قاعدة البيانات.</message>

@@ -1,8 +1,8 @@
 {**
  * templates/manager/plugins/plugins.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List available import/export plugins.
@@ -50,7 +50,7 @@
 			{/if}
 			<li><h4>{$plugin->getDisplayName()|escape}</h4>
 			<p>
-			{$plugin->getDescription()}<br/>
+			{$plugin->getDescription()}<br />
 			{assign var=managementVerbs value=$plugin->getManagementVerbs()}
 			{if $managementVerbs && $plugin->isSitePlugin() && !$isSiteAdmin}
 				<em>{translate key="manager.plugins.sitePlugin"}</em>

@@ -1,8 +1,8 @@
 {**
  * @file plugins/generic/objectsForReview/templates/editor/reviewObjectMetadata.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display list of review object metadata.
@@ -43,7 +43,7 @@ function toggleChecked() {
 	<li><a href="{url op="previewReviewObjectType" path=$typeId}">{translate key="plugins.generic.objectsForReview.editor.objectType.preview"}</a></li>
 </ul>
 
-<br/>
+<br />
 
 <div id="reviewObjectMetadata">
 <form id='reviewObjectMetadataForm' action="{url op="copyOrUpdateReviewObjectMetadata" path=$typeId}" method="post">

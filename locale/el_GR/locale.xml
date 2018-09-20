@@ -4,8 +4,8 @@
 <!--
   * locale/el_GR/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the gr_GR (Greek) locale.
@@ -281,7 +281,7 @@
         </ul>]]></message>
 
         <!-- System Information -->
-        <message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>ΣΗΜΕΙΩΣΗ!</div>
+        <message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>ΣΗΜΕΙΩΣΗ!</h4>
         <p>Δεν ήταν δυνατή η αυτόματη αντικατάσταση του αρχείου ρυθμίσεων από το σύστημα. Για να εφαρμόσετε τις αλλαγές στις ρυθμίσεις πρέπει να ανοίξετε το <tt>config.inc.php</tt> με έναν κατάλληλο επεξεργαστή κειμένου και να αντικαταστήσετε τα περιεχόμενά του με τα περιεχόμενου του παρακάτω πεδίου κειμένου.</p>]]></message>
 
 	<!-- Site Administrator Merge Users -->
@@ -306,7 +306,7 @@
 <h4>1. Προτεινόμενη Πολιτική για περιοδικά Ανοικτής Πρόσβασης</h4>
 Οι Συγγραφείς που δημοσιεύουν εργασίες τους σε αυτό το περιοδικό συμφωνούν στους παρακάτω όρους:
 <ol type="a">
-	<li>Οι Συγγραφείς διατηρούν τα Πνευματικά Δικαιώματα και χορηγούν στο περιοδικό το δικαίωμα της πρώτης δημοσίευσης ενώ ταυτόχρονα τα πνευματικά δικαιώματα της εργασίας προστατεύονται σύμφωνα με την <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> που επιτρέπει σε τρίτους - αποδέκτες της άδειας να χρησιμοποιούν την εργασία όπως θέλουν με την προϋπόθεση της διατήρησης των διατυπώσεων που προβλέπονται στην άδεια σχετικά με την αναφορά στον αρχικό δημιουργό και την αρχική δημοσίευση σε αυτό το περιοδικό.</li>
+	<li>Οι Συγγραφείς διατηρούν τα Πνευματικά Δικαιώματα και χορηγούν στο περιοδικό το δικαίωμα της πρώτης δημοσίευσης ενώ ταυτόχρονα τα πνευματικά δικαιώματα της εργασίας προστατεύονται σύμφωνα με την <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> που επιτρέπει σε τρίτους - αποδέκτες της άδειας να χρησιμοποιούν την εργασία όπως θέλουν με την προϋπόθεση της διατήρησης των διατυπώσεων που προβλέπονται στην άδεια σχετικά με την αναφορά στον αρχικό δημιουργό και την αρχική δημοσίευση σε αυτό το περιοδικό.</li>
 	<li>Οι Συγγραφείς μπορούν να συνάπτουν ξεχωριστές, και πρόσθετες συμβάσεις και συμφωνίες για την μη αποκλειστική διανομή της εργασίας όπως δημοσιεύτηκε στο περιοδικό αυτό (π.χ. κατάθεση σε ένα ακαδημαϊκό καταθετήριο ή δημοσίευση σε ένα βιβλίο), με την προϋπόθεση της αναγνώρισης και την αναφοράς της πρώτης δημοσίευσης σε αυτό το περιοδικό.</li>
 	<li>Το περιοδικό επιτρέπει και ενθαρρύνει τους Συγγραφείς να καταθέτουν τις εργασίες τους μέσω διαδικτύου (π.χ. σε ένα ακαδημαϊκό καταθετήριο ή στους προσωπικές τους ιστοσελίδες) πριν και μετά από τις διαδικασίες της δημοσίευσης, καθώς αυτό μπορεί να οδηγήσει σε παραγωγική ανταλλαγή ιδεών και σκέψεων καθώς επίσης και σε γρηγορότερη και μεγαλύτερη χρήση και ευρετηρίαση της δημοσιευμένης εργασίας (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">The Effect of Open Access</a>).</li>
 </ol>
@@ -314,7 +314,7 @@
 <h4>Προτεινόμενη Πολιτική για Περιοδικά που προσφέρουν Καθυστερημένη Ανοικτή Πρόσβαση</h4>
 Οι Συγγραφείς που δημοσιεύουν εργασίες τους σε αυτό το περιοδικό συμφωνούν στους παρακάτω όρους:
 <ol type="a">
-	<li>Οι Συγγραφείς διατηρούν τα Πνευματικά Δικαιώματα και χορηγούν στο περιοδικό το δικαίωμα της πρώτης δημοσίευσης της εργασίας τους, ενώ παράλληλα και [ΠΡΟΣΔΙΟΡΙΣΤΕ ΧΡΟΝΙΚΗ ΠΕΡΙΟΔΟ] μετά την δημοσίευση λαμβάνει άδεια προστασίας των πνευματικών  δικαιωμάτων σύμφωνα με την <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> που επιτρέπει σε τρίτους - αποδέκτες της άδειας να χρησιμοποιούν την εργασία όπως θέλουν με την προϋπόθεση της διατήρησης των διατυπώσεων που προβλέπονται στην άδεια σχετικά με την αναφορά στον αρχικό δημιουργό και την αρχική δημοσίευση σε αυτό το περιοδικό.</li>
+	<li>Οι Συγγραφείς διατηρούν τα Πνευματικά Δικαιώματα και χορηγούν στο περιοδικό το δικαίωμα της πρώτης δημοσίευσης της εργασίας τους, ενώ παράλληλα και [ΠΡΟΣΔΙΟΡΙΣΤΕ ΧΡΟΝΙΚΗ ΠΕΡΙΟΔΟ] μετά την δημοσίευση λαμβάνει άδεια προστασίας των πνευματικών  δικαιωμάτων σύμφωνα με την <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> που επιτρέπει σε τρίτους - αποδέκτες της άδειας να χρησιμοποιούν την εργασία όπως θέλουν με την προϋπόθεση της διατήρησης των διατυπώσεων που προβλέπονται στην άδεια σχετικά με την αναφορά στον αρχικό δημιουργό και την αρχική δημοσίευση σε αυτό το περιοδικό.</li>
 	 <li>Οι Συγγραφείς μπορούν να συνάπτουν ξεχωριστές, και πρόσθετες συμβάσεις και συμφωνίες για την μη αποκλειστική διανομή της εργασίας όπως δημοσιεύτηκε στο περιοδικό αυτό (π.χ. κατάθεση σε ένα ακαδημαϊκό καταθετήριο ή δημοσίευση σε ένα βιβλίο), με την προϋπόθεση της αναγνώρισης και την αναφοράς της πρώτης δημοσίευσης σε αυτό το περιοδικό.</li>
 	 <li>Το περιοδικό επιτρέπει και ενθαρρύνει τους Συγγραφείς να καταθέτουν τις εργασίες τους online (π.χ. σε ένα ακαδημαϊκό καταθετήριο ή στους προσωπικές τους ιστοσελίδες) πριν και μετά από τις διαδικασίες της δημοσίευσης, καθώς αυτό μπορεί να οδηγήσει σε παραγωγικές ανταλλαγές ιδεών και σκέψεων καθώς επίσης και σε γρηγορότερη και μεγαλύτερη χρήση και ευρετηρίαση της δημοσιευμένης εργασίας (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">The Effect of Open Access</a>).</li>
 </ol>]]></message>
@@ -368,10 +368,10 @@
 				</ol>]]></message>
 
         <!-- Used by editor in submission review / editing -->
-        <message key="editor.article.selectReviewerNotes"><![CDATA[Το όνομα αποτελεί σύνδεσμο προς το προφίλ του αξιολογητή.<br/>
-        Για την βαθμολογική κατάταξη η μέγιστη τιμή είναι το 5 (Άριστα).<br/>
-         Με την ένδειξη “εβδομάδες” υποδεικνύεται η μέση χρονική περίοδος για την ολοκλήρωση μιας αξιολόγησης.<br/>
-         Με την ένδειξη “τελευταία” υποδεικνύεται η ημερομηνία κατά την οποία έγινε η πιο πρόσφατη αποδοχή αξιολόγησης.<br/>
+        <message key="editor.article.selectReviewerNotes"><![CDATA[Το όνομα αποτελεί σύνδεσμο προς το προφίλ του αξιολογητή.<br />
+        Για την βαθμολογική κατάταξη η μέγιστη τιμή είναι το 5 (Άριστα).<br />
+         Με την ένδειξη “εβδομάδες” υποδεικνύεται η μέση χρονική περίοδος για την ολοκλήρωση μιας αξιολόγησης.<br />
+         Με την ένδειξη “τελευταία” υποδεικνύεται η ημερομηνία κατά την οποία έγινε η πιο πρόσφατη αποδοχή αξιολόγησης.<br />
          Με την ένδειξη “ενεργό” υποδεικνύεται ο αριθμός των αξιολογήσεων που βρίσκονται υπό εξέταση ή υπό εξέλιξη.]]></message>
 
         <!-- Section Editor -->
@@ -828,8 +828,8 @@
 
         <!-- RT Searches -->
 
-        <message key="rt.admin.validateUrls.description"><![CDATA[Τα πιθανά μη έγκυρα URL για ιστοτόπους αναζήτησης εμφανίζονται παρακάτω.<br/>
-        Πρέπει να επαληθεύσετε χειροκίνητα κάθε URL που θεωρείται μη έγκυρο, επειδή ο συγκεκριμένος έλεγχος δεν είναι 100% ακριβής.<br/>
+        <message key="rt.admin.validateUrls.description"><![CDATA[Τα πιθανά μη έγκυρα URL για ιστοτόπους αναζήτησης εμφανίζονται παρακάτω.<br />
+        Πρέπει να επαληθεύσετε χειροκίνητα κάθε URL που θεωρείται μη έγκυρο, επειδή ο συγκεκριμένος έλεγχος δεν είναι 100% ακριβής.<br />
         Η επικύρωση ενδέχεται να αποτύχει σε URLs αναζήτησης τα οποία απαιτούν δεδομένα που θα έχουν αποσταλεί από φόρμα.]]></message>
 
         <!-- RT Entities -->
@@ -1067,12 +1067,12 @@
 	<message key="payment.type.gift">Δώρο</message>
 	<message key="payment.type.gift.subscription">ΣΥνδρομή</message>
 	<message key="installer.allowFileUploads"><![CDATA[Ο server σας επιτρέπει ανέβασμα αρχείων : <strong>{$allowFileUploads}</strong>]]></message>
-	<message key="submission.license.cc.by-nc-nd4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nc4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nc-sa4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nd4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-sa4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc-nd4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc-nd/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια  <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nd4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nd/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />Η χρήση του περιεχομένου καθορίζεται από την άδεια <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></message>
 	<message key="manager.setup.preservationDescription"><![CDATA[Το Open Journal Systems υποστηρίζει το σύστημα<a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) που διασφαλίσει ασφαλή και συνεχή διατήρηση του περιοδικού σας. Έχετε πολλαπλές επιλογές για να συμπεριλάβετε το περιοδικό σας σε ένα δίκτυο LOCKSS:]]></message>
 	<message key="editor.submissionEditing.notes"><![CDATA[<ol>
 	<li>Τα τονισμένα αντικείμενα iυποδεικνύουν ότι απαιτείται ενέργεια από έναν επιμελητή όπως παρακάτω:

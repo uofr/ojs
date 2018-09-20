@@ -4,8 +4,8 @@
 <!--
   * locale/uk_UA/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the uk_UA (Українська) locale.
@@ -14,7 +14,7 @@
   * V. I. Vernadsky National Library of Ukraine
   -->
 
-<locale name="uk_UA" full_name = "Ukrainian">
+<locale name="uk_UA" full_name="Українська">
        <message key="manager.emails.confirmResetAll">Ви впевнені, що хочете скинути всі шаблони листів цього журналу? Всі зміни, зроблені у шаблонах листів, будуть втрачені.</message>
        <message key="manager.files.note">Примітка: Браузер файлів - потужний інструмент для прямої маніпуляції файлами та теками, асоційованими з журналом.</message>
        <message key="manager.groups">Шапка</message>
@@ -33,7 +33,7 @@
        <message key="manager.language.forms">Форми</message>
        <message key="manager.language.confirmDefaultSettingsOverwrite">Ця дія скасує всі особисті налаштування журналу, залежні від цієї локалізації</message>
        <message key="manager.language.reloadLocalizedDefaultSettings">Перевантажити мовні налаштування до стандартних</message>
-       <message key="manager.languages.languageInstructions"><![CDATA[OJS може бути доступним користувачам будь-якою з мов, що підтримуються. Крім того, OJS може функціонувати як багатомовна система, забезпечуючи користувачам можливість зміни мови з будь-якої сторінки сайту, а також надаючи можливість заповнення деяких даних кількома додатковими мовами.<br /><br/>Якщо необхідна мова підтримується OJS, але Ви не знаходите її у списку нижче, зверніться до адміністратора сайту з проханням встановити цю мову за допомогою інтерфейсу адміністратора. Для отримання інструкцій щодо додавання підтримки нових мов, будь ласка, консультуйтеся з документацією OJS.]]></message>
+       <message key="manager.languages.languageInstructions"><![CDATA[OJS може бути доступним користувачам будь-якою з мов, що підтримуються. Крім того, OJS може функціонувати як багатомовна система, забезпечуючи користувачам можливість зміни мови з будь-якої сторінки сайту, а також надаючи можливість заповнення деяких даних кількома додатковими мовами.<br /><br />Якщо необхідна мова підтримується OJS, але Ви не знаходите її у списку нижче, зверніться до адміністратора сайту з проханням встановити цю мову за допомогою інтерфейсу адміністратора. Для отримання інструкцій щодо додавання підтримки нових мов, будь ласка, консультуйтеся з документацією OJS.]]></message>
        <message key="manager.languages.noneAvailable">Вибачте, зараз не доступно жодних додаткових мов. Якщо Ви хочете використовувати додаткові мови у цьому журналі, повідомте про це адміністратору сайту.</message>
        <message key="manager.languages.primaryLocaleInstructions">Це буде основна мова сайту журналу.</message>
        <message key="manager.managementPages">Сторінки менеджменту</message>
@@ -205,7 +205,7 @@
        <message key="manager.setup.appearInAboutJournal">(показувати на сторінці "Про журнал") </message>
        <message key="manager.setup.authorCopyrightNotice">Положення про авторські права</message>
        <message key="manager.setup.authorCopyrightNoticeAgree">Вимагати від авторів погодження з Положенням про авторські права під час подання рукопису.</message>
-       <message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Подане нижче Положення про авторські права з'явиться у розділі "Про журнал" та у метаданих кожної опублікованої статті. Хоча формулювання положень авторського права для читачів знаходиться повністю у компетенції журналів, Public Knowledge Project рекомендує видавцям використовувати ліцензію <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a> та пропонує <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">типовий шаблон положення про авторські права</a>, пункти якого можна скопіювати та вставити у поле нижче журналам, які (a) пропонують відкритий доступ, (b) пропонують відкритий доступ з затримкою, або (c) не пропонують відкритого доступу.]]></message>
+       <message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Подане нижче Положення про авторські права з'явиться у розділі "Про журнал" та у метаданих кожної опублікованої статті. Хоча формулювання положень авторського права для читачів знаходиться повністю у компетенції журналів, Public Knowledge Project рекомендує видавцям використовувати ліцензію <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> та пропонує <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">типовий шаблон положення про авторські права</a>, пункти якого можна скопіювати та вставити у поле нижче журналам, які (a) пропонують відкритий доступ, (b) пропонують відкритий доступ з затримкою, або (c) не пропонують відкритого доступу.]]></message>
        <message key="manager.setup.authorGuidelines">Керівництва для авторів</message>
        <message key="manager.setup.authorGuidelinesDescription"><![CDATA[Викладіть для авторів прийняті стандарти щодо форматування та оформлення бібліографії у рукописах, що подаються до Вашого журналу (наприклад, <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001). Часто буває доречно подати приклади оформлення типових посилань на статті, книжки та інші види документів у списках пристатейної бібліографії. Крім того, якщо Ви заохочуєте авторів надсилати разом з текстами власних рукописів також супровідні файли, які допоможуть читачам журналу краще розуміти суть викладених у статтях досліджень, вкажіть типи супровідних файлів (наприклад, набори даних, дослідні інструменти), які журнал хотів би приймати від авторів.]]></message>
        <message key="manager.setup.competingInterests">Конфлікт інтересів</message>

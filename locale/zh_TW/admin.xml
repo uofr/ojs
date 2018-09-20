@@ -4,15 +4,15 @@
 <!--
   * locale/zh_TW/admin.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the zh_TW (繁體中文) locale.
   *
   -->
 
-<locale name="zh_TW" full_name = "繁體中文">
+<locale name="zh_TW" full_name="繁體中文">
 	<message key="admin.hostedJournals">期刊建置</message>
 	<message key="admin.settings.journalRedirect">期刊重新導向</message>
 	<message key="admin.settings.journalRedirectInstructions">讓主站重新導向至這份期刊。比方說，如果這個網站只有唯一一份期刊的話，這個選項就很有用。</message>

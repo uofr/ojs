@@ -4,8 +4,8 @@
 <!--
   * locale/en_US/locale.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings.
@@ -55,12 +55,12 @@
 	<message key="submission.license.cc.by-nd4">CC Attribution-NoDerivatives 4.0</message>
 	<message key="submission.license.cc.by4">CC Attribution 4.0</message>
 	<message key="submission.license.cc.by-sa4">CC Attribution-ShareAlike 4.0</message>
-	<message key="submission.license.cc.by-nc-nd4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nc4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nc-sa4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-nd4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.]]></message>
-	<message key="submission.license.cc.by-sa4.footer"><![CDATA[<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc-nd4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nc-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-nd4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.]]></message>
+	<message key="submission.license.cc.by-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></message>
 
 	<message key="reviewer.article.enterReviewForm">Click on icon to fill in the review form.</message>
 	<message key="reviewer.article.reviewFormResponse.form.responseRequired">Please fill in required fields.</message>
@@ -236,6 +236,7 @@
 	<message key="user.orcid">ORCID iD</message>
 	<message key="user.orcid.description"><![CDATA[ORCID iDs can only be assigned by <a href="http://orcid.org/" target="_blank">the ORCID Registry</a>. You must conform to their standards for expressing ORCID iDs, and include the full URI (eg. <em>http://orcid.org/0000-0002-1825-0097</em>).]]></message>
 	<message key="user.profile.form.orcidInvalid">The ORCID iD you specified is invalid.</message>
+	<message key="user.profile.implicitAuthChangePasswordInstructions">If you have logged in via your Shibboleth, follow your organization's process if you need to change your password.  For local users, continue below.</message>
 
 	<!-- Roles -->
 	<message key="user.role.manager">Journal Manager</message>
@@ -382,7 +383,7 @@ Note that the OAI interface can be disabled for this site by editing the OJS sys
 </ul>]]></message>
 
 	<!-- System Information -->
-	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>NOTE!</div>
+	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>NOTE!</h4>
 <p>The system could not automatically overwrite the configuration file. To apply your configuration changes you must open <tt>config.inc.php</tt> in a suitable text editor and replace its contents with the contents of the text field below.</p>]]></message>
 
 
@@ -428,15 +429,17 @@ Note that the OAI interface can be disabled for this site by editing the OJS sys
 
 	<message key="manager.setup.preservationDescription"><![CDATA[Open Journal Systems supports the <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) system to ensure secure and permanent preservation of your journal. You have several options for including your journal in a LOCKSS network:]]></message>
 
-	<message key="manager.setup.lockssDescription"><![CDATA[<strong>Other LOCKSS Networks</strong>
-<br /><br />
-If you believe you have access to one or more of the LOCKSS networks listed <a href="http://www.lockss.org/community/networks/" target="_blank">here</a>, please contact the appropriate LOCKSS Network administrator to apply for inclusion. Completing the form below will allow for inclusion of your journal in those networks. <em>No content will be preserved before you have notified the appropriate network</em>.]]></message>
+<message key="manager.setup.lockssDescription"><![CDATA[<strong>PKP Private LOCKSS Network</strong>
+<p>Any OJS journal that has an ISSN and has published at least one article can choose to agree to the terms of use and be preserved in the PKP PLN at no cost.</p>
+<p>To join, go to <a href="{$genericPluginsUrl}">Generic Plugins</a>, find PKP PLN Plugin, select Enable, and then select Settings, and accept the Terms of Use. Your content will then be automatically included in the network. No further action is required.</p>
+<strong>Other LOCKSS Networks</strong>
+<p>If you believe you have access to one or more of the LOCKSS networks listed <a href="http://www.lockss.org/community/networks/" target="_blank">here</a>, please contact the appropriate LOCKSS Network administrator to apply for inclusion. Completing the form below will allow for inclusion of your journal in those networks. <em>No content will be preserved before you have notified the appropriate network</em>.</p>]]></message>
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Examples of Creative Commons Licensing Notifications in the Copyright Notices</h3>
 <h4>1. Proposed Policy for Journals That Offer Open Access</h4>
 Authors who publish with this journal agree to the following terms:
 <ol type="a">
-	<li>Authors retain copyright and grant the journal right of first publication with the work simultaneously licensed under a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
+	<li>Authors retain copyright and grant the journal right of first publication with the work simultaneously licensed under a <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
 	<li>Authors are able to enter into separate, additional contractual arrangements for the non-exclusive distribution of the journal's published version of the work (e.g., post it to an institutional repository or publish it in a book), with an acknowledgement of its initial publication in this journal.</li>
 	<li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">The Effect of Open Access</a>).</li>
 </ol>
@@ -444,7 +447,7 @@ Authors who publish with this journal agree to the following terms:
 <h4>2. Proposed Policy for Journals That Offer Delayed Open Access</h4>
 Authors who publish with this journal agree to the following terms:
 <ol type="a">
-	<li>Authors retain copyright and grant the journal right of first publication, with the work [SPECIFY PERIOD OF TIME] after publication simultaneously licensed under a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
+	<li>Authors retain copyright and grant the journal right of first publication, with the work [SPECIFY PERIOD OF TIME] after publication simultaneously licensed under a <a target="_new" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a> that allows others to share the work with an acknowledgement of the work's authorship and initial publication in this journal.</li>
 	 <li>Authors are able to enter into separate, additional contractual arrangements for the non-exclusive distribution of the journal's published version of the work (e.g., post it to an institutional repository or publish it in a book), with an acknowledgement of its initial publication in this journal.</li>
 	 <li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html"> The Effect of Open Access</a>).</li>
 </ol>]]></message>
@@ -539,10 +542,10 @@ You may optionally provide the user with a reason for disabling their account.</
 	<!-- Navigation sidebar menu -->
 
 	<!-- Used by editor in submission review / editing -->
-	<message key="editor.article.selectReviewerNotes"><![CDATA[Name links to reviewer's profile.<br/>
-Ratings is out of 5 (Excellent).<br/>
-Weeks refers to average period of time to complete a review.<br/>
-Latest is date of most recently accepted review.<br/>
+	<message key="editor.article.selectReviewerNotes"><![CDATA[Name links to reviewer's profile.<br />
+Ratings is out of 5 (Excellent).<br />
+Weeks refers to average period of time to complete a review.<br />
+Latest is date of most recently accepted review.<br />
 Active is how many reviews are currently being considered or underway.]]></message>
 
 
@@ -729,6 +732,7 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="user.login.registerNewAccount">Not a user? Register with this site</message>
 	<message key="user.login.resetPasswordInstructions"><![CDATA[For security reasons, this system emails a reset password to registered users, rather than recalling the
 current password.<br /><br />Enter your email address below to reset your password. A confirmation will be sent to this email address.]]></message>
+	<message key="user.login.implicitAuthLogin">Login via Shibboleth</message>
 
 	<!-- Registration -->
 	<message key="user.register.emailValidation">Email Validation Required</message>
@@ -747,6 +751,7 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="user.register.reviewerDescriptionNoInterests">Willing to conduct peer review of submissions to the journal.</message>
 	<message key="user.register.reviewerDescription">Willing to conduct peer review of submissions to the site.</message>
 	<message key="user.register.reviewerInterests">Identify reviewing interests (substantive areas and research methods):</message>
+	<message key="user.register.implicitAuth">Login via Shibboleth with an existing organization account</message>
 
 	<!-- Subscriptions -->
 	<message key="user.subscriptions.mySubscriptions">My Subscriptions</message>
@@ -1126,8 +1131,8 @@ Your server currently supports mbstring: <strong>{$supportsMBString}</strong>]]>
 
 	<!-- RT Searches -->
 
-	<message key="rt.admin.validateUrls.description"><![CDATA[Possibly invalid URLs for search sites are displayed below.<br/>
-You should manually verify any URLs marked as invalid, as this test is not 100% accurate.<br/>
+	<message key="rt.admin.validateUrls.description"><![CDATA[Possibly invalid URLs for search sites are displayed below.<br />
+You should manually verify any URLs marked as invalid, as this test is not 100% accurate.<br />
 Validation may fail on search URLs that require posted form data.]]></message>
 
 	<!-- RT Entities -->

@@ -1,8 +1,8 @@
 {**
  * templates/gateway/lockss.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * LOCKSS Publisher Manifest gateway page.
@@ -108,7 +108,7 @@
 <div style="text-align: center; width: 250px; margin: 0 auto">
 	<a href="http://www.lockss.org/"><img src="{$baseUrl}/templates/images/lockss.gif" style="border: 0;" alt="LOCKSS" /></a>
 	<br />
-	LOCKSS system has permission to collect, preserve, and serve this Archival Unit.
+	LOCKSS system has permission to ingest, preserve, and serve this Archival Unit.
 		
 	<br /><br />
 	

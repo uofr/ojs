@@ -1,8 +1,8 @@
 {**
  * templates/rtadmin/settings.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RT Administration settings.
@@ -17,7 +17,7 @@
 
 <p>{translate key="rt.admin.settings.description"}</p>
 
-<div id="enableRT"><input type="checkbox" {if $enabled}checked="checked" {/if}name="enabled" value="1" id="enabled"/>&nbsp;&nbsp;<label for="enabled">{translate key="rt.admin.settings.enableReadingTools"}</label></div><br/>
+<div id="enableRT"><input type="checkbox" {if $enabled}checked="checked" {/if}name="enabled" value="1" id="enabled"/>&nbsp;&nbsp;<label for="enabled">{translate key="rt.admin.settings.enableReadingTools"}</label></div><br />
 
 <div class="separator"></div>
 <div id="rtAdminOptions">
@@ -86,9 +86,9 @@
 <label for="version">{translate key="rt.admin.settings.relatedItems"}</label>&nbsp;&nbsp;<select name="version" id="version" class="selectMenu">
 <option value="">{translate key="rt.admin.settings.disableRelatedItems"}</option>
 {html_options options=$versionOptions selected=$version}
-</select><br/>
+</select><br />
 {url|assign:"relatedItemsLink" op="versions"}
-{translate key="rt.admin.settings.relatedItemsLink" relatedItemsLink=$relatedItemsLink}<br/>
+{translate key="rt.admin.settings.relatedItemsLink" relatedItemsLink=$relatedItemsLink}<br />
 </div>
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="rtadmin" escape=false}'" /></p>
 

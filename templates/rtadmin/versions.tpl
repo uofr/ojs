@@ -1,8 +1,8 @@
 {**
  * templates/rtadmin/versions.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RTAdmin version list
@@ -13,7 +13,7 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<br/>
+<br />
 
 <div id="versions">
 <table class="listing" width="100%">
@@ -45,14 +45,14 @@
 	{/if}
 	</table>
 </div>	
-<br/>
+<br />
 
-<a href="{url op="createVersion"}" class="action">{translate key="rt.admin.versions.createVersion"}</a><br/>
+<a href="{url op="createVersion"}" class="action">{translate key="rt.admin.versions.createVersion"}</a><br />
 
 <a href="{url op="restoreVersions"}" onclick="return confirm('{translate|escape:"jsparam" key="rt.admin.versions.confirmRestore"}')" class="action">{translate key="rt.admin.versions.restoreVersions"}</a>
 
-<br/>
-<br/>
+<br />
+<br />
 
 <form method="post" action="{url op="importVersion"}" enctype="multipart/form-data">
 	<input type="file" class="uploadField" name="versionFile" />

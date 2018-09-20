@@ -3,8 +3,8 @@
 /**
  * @file classes/author/form/submit/AuthorSubmitStep5Form.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AuthorSubmitStep5Form
@@ -141,7 +141,7 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 		$article->setSubmissionProgress(0);
 		$article->stampStatusModified();
 		$articleDao->updateArticle($article);
-		
+
 		// Setup default copyright/license metadata at finalization of submission.
 		$article->initializePermissions();
 		$articleDao->updateLocaleFields($article);
@@ -181,7 +181,7 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 		// Send author notification email
 		import('classes.mail.ArticleMailTemplate');
 		$mail = new ArticleMailTemplate($article, 'SUBMISSION_ACK', null, null, null, false);
-		$mail->setReplyTo(null);
+		$mail->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 		if ($mail->isEnabled()) {
 			$mail->addRecipient($user->getEmail(), $user->getFullName());
 			// If necessary, BCC the acknowledgement to someone.
@@ -213,7 +213,7 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 		}
 
 		import('classes.article.log.ArticleLog');
-		ArticleLog::logEvent($this->request, $article, ARTICLE_LOG_ARTICLE_SUBMIT, 'log.author.submitted', array('authorName' => $user->getFullName()));
+		ArticleLog::logEvent($this->request, $article, ARTICLE_LOG_ARTICLE_SUBMIT, 'log.author.submitted', array('authorName' => $user->getFullName(), 'submissionId' => $article->getId()));
 
 		return $this->articleId;
 	}

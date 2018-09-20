@@ -1,8 +1,8 @@
 {**
  * plugins/generic/thesis/settingsForm.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Thesis abstracts plugin settings
@@ -58,7 +58,7 @@
 <div class="separator"></div>
 <div id="thesisPublishing">
 <h4>{translate key="plugins.generic.thesis.settings.publishing"}</h4>
-<br/>
+<br />
 <table width="100%" class="data">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="thesisOrder" required="true" key="plugins.generic.thesis.settings.order"}</td>
@@ -69,7 +69,7 @@
 <div class="separator"></div>
 <div id="thesisContact">
 <h4>{translate key="plugins.generic.thesis.settings.thesisContact"}</h4>
-<br/>
+<br />
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="thesisName" required="true" key="user.name"}</td>
@@ -103,7 +103,7 @@
 	</tr>
 </table>
 </div>
-<br/>
+<br />
 
 <input type="submit" name="save" class="button defaultButton" value="{translate key="common.save"}"/><input type="button" class="button" value="{translate key="common.cancel"}" onclick="history.go(-1)"/>
 </form>

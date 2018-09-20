@@ -1,8 +1,8 @@
 {**
  * templates/editor/issues/issueToc.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display the issue's table of contents
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 <h3>{translate key="issue.toc"}</h3>
 {url|assign:"url" op="resetSectionOrder" path=$issueId}
-{if $customSectionOrderingExists}{translate key="editor.issues.resetSectionOrder" url=$url}<br/>{/if}
+{if $customSectionOrderingExists}{translate key="editor.issues.resetSectionOrder" url=$url}<br />{/if}
 <form method="post" action="{url op="updateIssueToc" path=$issueId}" onsubmit="return confirm('{translate|escape:"jsparam" key="editor.issues.saveChanges"}')">
 
 {assign var=numCols value=5}

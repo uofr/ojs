@@ -7,8 +7,8 @@
 /**
  * @file classes/user/form/RegistrationForm.inc.php
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RegistrationForm
@@ -41,10 +41,10 @@ class RegistrationForm extends Form {
 	 */
 	function RegistrationForm() {
 		parent::Form('user/register.tpl');
-		$this->implicitAuth = Config::getVar('security', 'implicit_auth');
+		$this->implicitAuth = strtolower(Config::getVar('security', 'implicit_auth'));
 
-		if ($this->implicitAuth) {
-			// If implicit auth - it is always an existing user
+		if (Validation::isLoggedIn()) {
+			// If logged in
 			$this->existingUser = 1;
 		} else {
 			$this->existingUser = Request::getUserVar('existingUser') ? 1 : 0;
@@ -80,7 +80,14 @@ class RegistrationForm extends Form {
 				$this->addCheck(new FormValidatorCustom($this, 'email', 'required', 'user.register.form.emailExists', array(DAORegistry::getDAO('UserDAO'), 'userExistsByEmail'), array(), true));
 				if ($this->captchaEnabled) {
 					if ($this->reCaptchaEnabled) {
-						$this->addCheck(new FormValidatorReCaptcha($this, 'recaptcha_challenge_field', 'recaptcha_response_field', Request::getRemoteAddr(), 'common.captchaField.badCaptcha'));
+						import('lib.pkp.lib.recaptcha.recaptchalib');
+						if (Config::getVar('captcha', 'recaptcha_enforce_hostname')) {
+							$host = Request::getServerHost();
+						} else { 
+							$host = '';
+						}
+						$reCaptchaVersion = intval(Config::getVar('captcha', 'recaptcha_version', RECAPTCHA_VERSION_LEGACY));
+						$this->addCheck(new FormValidatorReCaptcha($this, 'recaptcha_challenge_field', ($reCaptchaVersion === RECAPTCHA_VERSION_LEGACY ? 'recaptcha_response_field' : 'g-recaptcha-response'), Request::getRemoteAddr(), 'common.captchaField.badCaptcha', $host));
 					} else {
 						$this->addCheck(new FormValidatorCaptcha($this, 'captcha', 'captchaId', 'common.captchaField.badCaptcha'));
 					}
@@ -110,9 +117,10 @@ class RegistrationForm extends Form {
 			$templateMgr->assign('reCaptchaEnabled', $this->reCaptchaEnabled);
 			if ($this->reCaptchaEnabled) {
 				import('lib.pkp.lib.recaptcha.recaptchalib');
+				$reCaptchaVersion = intval(Config::getVar('captcha', 'recaptcha_version', RECAPTCHA_VERSION_LEGACY));
 				$publicKey = Config::getVar('captcha', 'recaptcha_public_key');
-				$useSSL = Config::getVar('security', 'force_ssl')?true:false;
-				$reCaptchaHtml = recaptcha_get_html($publicKey, null, $useSSL);
+				$useSSL = Config::getVar('security', 'force_ssl')||Request::getProtocol()=='https'?true:false;
+				$reCaptchaHtml = recaptcha_versioned_get_html($reCaptchaVersion, $publicKey, null, $useSSL);
 				$templateMgr->assign('reCaptchaHtml', $reCaptchaHtml);
 				$templateMgr->assign('captchaEnabled', $this->captchaEnabled);
 			} else {
@@ -160,6 +168,10 @@ class RegistrationForm extends Form {
 		$this->setData('existingUser', $this->existingUser);
 		$this->setData('userLocales', array());
 		$this->setData('sendPassword', 0);
+		$this->setData('firstName', Request::getUserVar('firstName'));
+		$this->setData('lastName', Request::getUserVar('lastName'));
+		$this->setData('email', Request::getUserVar('email'));
+		$this->setData('orcid', Request::getUserVar('orcid'));
 	}
 
 	/**
@@ -177,8 +189,14 @@ class RegistrationForm extends Form {
 		);
 		if ($this->captchaEnabled) {
 			if ($this->reCaptchaEnabled) {
-				$userVars[] = 'recaptcha_challenge_field';
-				$userVars[] = 'recaptcha_response_field';
+				import('lib.pkp.lib.recaptcha.recaptchalib');
+				$reCaptchaVersion = intval(Config::getVar('captcha', 'recaptcha_version', RECAPTCHA_VERSION_LEGACY));
+				if ($reCaptchaVersion === RECAPTCHA_VERSION_LEGACY) {
+					$userVars[] = 'recaptcha_challenge_field';
+					$userVars[] = 'recaptcha_response_field';
+				} else {
+					$userVars[] = 'g-recaptcha-response';
+				}
 			} else {
 				$userVars[] = 'captchaId';
 				$userVars[] = 'captcha';
@@ -336,7 +354,7 @@ class RegistrationForm extends Form {
 
 				// Send email validation request to user
 				$mail = new MailTemplate('USER_VALIDATE');
-				$mail->setReplyTo(null);
+				$mail->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 				$mail->assignParams(array(
 					'userFullName' => $user->getFullName(),
 					'activateUrl' => Request::url($journal->getPath(), 'user', 'activateUser', array($this->getData('username'), $accessKey))
@@ -348,7 +366,7 @@ class RegistrationForm extends Form {
 			if ($this->getData('sendPassword')) {
 				// Send welcome email to user
 				$mail = new MailTemplate('USER_REGISTER');
-				$mail->setReplyTo(null);
+				$mail->setFrom($journal->getSetting('contactEmail'), $journal->getSetting('contactName'));
 				$mail->assignParams(array(
 					'username' => $this->getData('username'),
 					'password' => String::substr($this->getData('password'), 0, 30), // Prevent mailer abuse via long passwords

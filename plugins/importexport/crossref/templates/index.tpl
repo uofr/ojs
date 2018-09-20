@@ -1,8 +1,8 @@
 {**
  * @file plugins/importexport/crossref/templates/index.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * DataCite plug-in home page.
@@ -22,9 +22,7 @@
 	<p>{translate key="plugins.importexport.common.export.unAvailable"}</p>
 {else}
 	<ul>
-		<li><a href="{plugin_url path="all"}">{translate key="plugins.importexport.crossref.export.unregistered"}</a></li>
-		<li><a href="{plugin_url path="issues"}">{translate key="plugins.importexport.common.export.issues"}</a></li>
-		<li><a href="{plugin_url path="articles"}">{translate key="plugins.importexport.common.export.articles"}</a></li>
+		<li><a href="{plugin_url path="articles"}">{translate key="plugins.importexport.crossref.manageDOIs"}</a></li>
 	</ul>
 {/if}
 

@@ -1,8 +1,8 @@
 {**
  * templates/manager/sections/sections.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display list of sections in journal management.
@@ -19,7 +19,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveSection"); });
 {/literal}
 </script>
 
-<br/>
+<br />
 
 <div id="sections">
 <table width="100%" class="listing" id="dragTable">

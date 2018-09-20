@@ -3,11 +3,11 @@
 <!--
   * locale/es_ES/manager.xml
   *
-  * Copyright (c) 2013-2015 Simon Fraser University Library
-  * Copyright (c) 2003-2015 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
   *
   * Localization strings.
   -->
@@ -211,7 +211,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Para que se muestre en la sección Acerca de la revista) </message>
 	<message key="manager.setup.authorCopyrightNotice">Aviso de derechos de autor/a</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Exigir a los autores/as que se muestren de acuerdo con la política de derechos de autor/a como parte del proceso de envío.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Los términos de la política de derechos de autor que introduzca a continuación se mostrarán en la sección Acerca de la revista y en los metadatos de todos los elementos publicados. A pesar de que es elección de la revista determinar la naturaleza de su acuerdo sobre los derechos de autor, el Public Knowledge Project recomienda la utilización de la licencia <a href="http://creativecommons.org" target="_new" class="action">Creative Commons</a>. Con este fin, proporciona una <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">muestra de redacción de aviso de derechos de autor</a> que puede ser copiada y pegada en el siguiente espacio para revistas que (a) ofrecen acceso abierto, (b) ofrecen acceso abierto diferido o (c) no ofrecen acceso abierto.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Los términos de la política de derechos de autor que introduzca a continuación se mostrarán en la sección Acerca de la revista y en los metadatos de todos los elementos publicados. A pesar de que es elección de la revista determinar la naturaleza de su acuerdo sobre los derechos de autor, el Public Knowledge Project recomienda la utilización de la licencia <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Con este fin, proporciona una <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">muestra de redacción de aviso de derechos de autor</a> que puede ser copiada y pegada en el siguiente espacio para revistas que (a) ofrecen acceso abierto, (b) ofrecen acceso abierto diferido o (c) no ofrecen acceso abierto.]]></message>
 	<message key="manager.setup.authorGuidelines">Directrices para autores/as</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Establecen, para los autores/as, estándares bibliográficos y de formato utilizados en elementos enviados a la revista (p. ej., <em>Manual de publicación de la Asociación americana de psicología</em>, 5ª edición, 2001). A menudo, resulta de gran ayuda proporcionar ejemplos del formato que deben tener las referencias a revistas y libros con el fin de aplicarlo en los envíos. Asimismo, es importante mencionar los archivos adicionales (p. ej. conjuntos de datos, herramientas de búsqueda, etc.) que los autores/as deberían cargar, además de su envío, para que los lectores/as se sientan más involucrados en el proyecto.]]></message>
 	<message key="manager.setup.competingInterests">Conflicto de intereses</message>
@@ -513,7 +513,6 @@
 	<message key="manager.statistics.reports.objectType">Tipo de objeto</message>
 	<message key="manager.statistics.reports.objectId">Id. del objeto</message>
 	<message key="manager.statistics.reports.objectId.label">Defina uno o más id. del objeto separados por una coma (p. ej., 1,2,3,4,5).</message>
-	<message key="manager.statistics.reports.today">Hoy</message>
 	<message key="manager.statistics.reports.currentMonth">Mes actual</message>
 	<message key="manager.statistics.reports.orderBy">Ordenar por</message>
 	<message key="manager.statistics.reports.orderDir">Dirección</message>
@@ -741,4 +740,5 @@
 	<message key="manager.setup.emailHeader">Cabecera del correo electrónico</message>
 	<message key="manager.setup.confirmResetLicenseChanged">Ha cambiado la información sobre licencia y copyright. Guarde los cambios antes de resetear los permisos.</message>
 	<message key="manager.setup.emailHeaderDescription">Las plantillas de correo que son enviadas por el sistema a nombre de la revista comenzarán con la siguiente cabecera. Estos correos se enviarán a nombre del Contacto Principal de la revista, así que es importante aclarar que el Contacto Principal de la revista no es necesariamente el responsable del contenido del mensaje, que puede haber sido enviado por otro usuario pero llega a su nombre.</message>
+	<message key="manager.statistics.reports.yesterday">Ayer</message>
 </locale>

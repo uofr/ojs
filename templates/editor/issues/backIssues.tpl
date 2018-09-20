@@ -1,8 +1,8 @@
 {**
  * templates/editor/issues/backIssues.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Listings of back issues
@@ -27,7 +27,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveIssue"); });
         <li class="current"><a href="{url op="backIssues"}">{translate key="editor.navigation.issueArchive"}</a></li>
 </ul>
 
-<br/>
+<br />
 
 {if $usesCustomOrdering}
 	{url|assign:"resetUrl" op="resetIssueOrder"}

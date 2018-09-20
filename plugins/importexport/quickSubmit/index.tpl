@@ -1,8 +1,8 @@
 {**
  * plugins/importexport/quickSubmit/index.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Template for one-page submission form
@@ -294,7 +294,7 @@ function updateAbstractRequired() {
 				<td width="70%" class="value" colspan="2"><input type="radio" id="primaryContact" name="primaryContact" value="{$authorIndex|escape}"{if $primaryContact == $authorIndex} checked="checked"{/if} /> {fieldLabel name="primaryContact" key="author.submit.selectPrincipalContact"} <input type="submit" name="delAuthor[{$authorIndex|escape}]" value="{translate key="author.submit.deleteAuthor"}" class="button" /></td>
 			</tr>
 			<tr>
-				<td colspan="2"><br/></td>
+				<td colspan="2"><br /></td>
 			</tr>
 			{/if}
 			</table>

@@ -1,8 +1,8 @@
 {**
  * plugins/generic/thesis/theses.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display list of thesis abstracts in plugin management.
@@ -38,7 +38,7 @@
 		<option value="is"{if $searchMatch == 'is'} selected="selected"{/if}>{translate key="form.is"}</option>
 	</select>
 	<input type="text" size="15" name="search" class="textField" value="{$search|escape}" />
-	<br/>
+	<br />
 	{translate key="plugins.generic.thesis.manager.dateApproved"}
 	{translate key="common.between"}
 	{html_select_date prefix="dateFrom" time=$dateFrom all_extra="class=\"selectMenu\"" year_empty="" month_empty="" day_empty="" start_year="$yearOffsetPast"}
@@ -47,7 +47,7 @@
 	<input type="hidden" name="dateToHour" value="23" />
 	<input type="hidden" name="dateToMinute" value="59" />
 	<input type="hidden" name="dateToSecond" value="59" />
-	<br/>
+	<br />
 	<input type="submit" value="{translate key="common.search"}" class="button" />
 </form>
 

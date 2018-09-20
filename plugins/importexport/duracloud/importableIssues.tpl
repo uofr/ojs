@@ -1,8 +1,8 @@
 {**
  * plugins/importexport/duracloud/issues.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List of issues to potentially import
@@ -27,7 +27,7 @@ function toggleChecked() {
 {/literal}
 </script>
 
-<br/>
+<br />
 
 <div id="issues">
 <form action="{plugin_url path="importIssues"}" method="post" id="issues">

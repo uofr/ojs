@@ -1,8 +1,8 @@
 {**
  * templates/manager/reviewForms/reviewFormElements.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Display list of review form elements.
@@ -43,7 +43,7 @@ function toggleChecked() {
 	<li><a href="{url op="previewReviewForm" path=$reviewFormId}">{translate key="manager.reviewForms.preview"}</a></li>
 </ul>
 
-<br/>
+<br />
 
 <div id="reviewFormElements">
 <form id="reviewFormElements" action="{url op="copyReviewFormElement"}" method="post">

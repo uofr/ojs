@@ -1,8 +1,8 @@
 {**
  * plugins/importexport/users/index.tpl
  *
- * Copyright (c) 2013-2015 Simon Fraser University Library
- * Copyright (c) 2003-2015 John Willinsky
+ * Copyright (c) 2013-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List of operations this plugin can perform
@@ -13,19 +13,19 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<br/>
+<br />
 <div id="exportUsers">
 <h3>{translate key="plugins.importexport.users.export.exportUsers"}</h3>
 
 <ul>
 	<li>
 		<form action="{plugin_url path="exportByRole"}" method="post">
-			{translate key="plugins.importexport.users.export.exportByRole"}<br/>
+			{translate key="plugins.importexport.users.export.exportByRole"}<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;<select name="roles[]" size="5" multiple="multiple" class="selectMenu">
 				{foreach from=$roleOptions item=roleOption key=roleKey}
 					{if $roleKey != ''}<option value="{$roleKey|escape}">{translate key=$roleOption}</option>{/if}
 				{/foreach}
-			</select><br/>
+			</select><br />
 			&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="button" value="{translate key="plugins.importexport.users.export.exportUsers"}"/>
 
 		</form>
